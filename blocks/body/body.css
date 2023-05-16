@@ -3,7 +3,9 @@ body {
   width: 375px;
   background-color: #f8f8f8;
   font-family: 'Golos', Arial, sans-serif;
+  color: var(--main-title-color);
   --main-title-color: #0f1d4b;
   --main-text-color: #3e4e87;
   --second-text-color: #8990a8;
+  position: relative;
 }

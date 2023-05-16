@@ -1,0 +1,88 @@
+.what-the-platform {
+  display: flex;
+  flex-direction: column;
+  height: 458px;
+}
+.what-the-platform__title {
+  margin: 80px 23px 0 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 29px;
+  width: 300px;
+}
+.what-the-platform__list {
+  list-style-type: none;
+  width: 323px;
+  margin: 0 auto 32px;
+  padding: 0 0 0 20px;
+  color: var(--main-text-color);
+}
+.what-the-platform__list li:first-child {
+  list-style-image: url('../../images/Icon-plan-actions.svg');
+}
+.what-the-platform__list li:nth-child(2) {
+  list-style-image: url('../../images/Icon-list-helps.svg');
+}
+.what-the-platform__list li:last-child {
+  list-style-image: url('../../images/Icon-support-teams.svg');
+}
+.what-the-platform__item {
+  width: 307px;
+  margin-top: 24px;
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* heart */
+.what-the-platform__heart-wrapper {
+  width: 375px;
+  height: 430px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+.what-the-platform__heart-violet {
+  background-image: url('../../images/icon-heart-violet.svg');
+  width: 375px;
+  height: 430px;
+  background-position: cover;
+  /* opacity: 0.7; */
+}
+.what-the-platform__heart-white {
+  background-image: url('../../images/icon-heart-header-white.svg');
+  width: 155px;
+  height: 130px;
+  position: absolute;
+  background-position: cover;
+  background-repeat: no-repeat;
+  top: 72px;
+  right: -26px;
+}
+.what-the-platform__heart-count {
+  position: absolute;
+  top: 116px;
+  right: 10px;
+  font-weight: 500;
+  font-size: 16.5px;
+  line-height: 18.15px;
+  color: #7a3ef0;
+  transform: rotate(-18.73deg);
+  height: 18px;
+  margin: 0;
+}
+.what-the-platform__heart-text {
+  position: absolute;
+  top: 134px;
+  width: 116px;
+  right: -14px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #7a3ef0;
+  transform: rotate(-20.73deg);
+  height: 30px;
+  margin: 0;
+}
