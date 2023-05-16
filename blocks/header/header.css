@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  height: 50px;
+  /* padding: 15px ; */
+}
+.header__title {
+  margin: 15px 106px 15px 16px;
+  width: 163px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: -0.99px;
+  height: 20px;
+  color: var(--main-title-color);
+}
+.header__icon-marketplace {
+  width: 32px;
+  height: 32px;
+  background-image: url('../../images/icon-marketplace.svg');
+  margin: 9px 18px 9px 0;
+}
+.header__icon-burger-menu {
+  margin: 9px 19px 9px 0;
+  width: 32px;
+  height: 32px;
+  background-image: url('../../images/icon-burger-menu.svg');
+}
