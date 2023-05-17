@@ -8,4 +8,5 @@ body {
   --main-text-color: #3e4e87;
   --second-text-color: #8990a8;
   position: relative;
+  border: 1px solid gray;
 }

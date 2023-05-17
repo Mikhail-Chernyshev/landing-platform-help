@@ -1,0 +1,25 @@
+.instructions {
+  display: flex;
+  flex-direction: column;
+}
+.instructions__title {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 23.7px;
+  letter-spacing: -1px;
+  margin: 0 101px 30px 16px;
+}
+.instructions__subtitle {
+  color: #000000;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.37px;
+  margin: 0 0 15px 16px;
+}
+.instructions__wrapper {
+  display: flex;
+  overflow: hidden;
+  margin: 0 0 70px 16px;
+}

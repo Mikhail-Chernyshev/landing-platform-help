@@ -1,0 +1,103 @@
+.services {
+  display: flex;
+  flex-direction: column;
+}
+.services__title {
+  margin: 0 100px 6px 16px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.services__select {
+  margin: 0 auto 30px 16px;
+  display: flex;
+}
+.services__city {
+  color: #3d76fe;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  margin: 0 10px 0 0;
+}
+.services__icon-select {
+  width: 12px;
+  height: 6px;
+  margin: 13px 0 0 0;
+  background-image: url('../../images/icon-select-list-blue.svg');
+  background-position: center;
+  background-size: cover;
+}
+.services__situation {
+  font-weight: 500;
+  font-size: 14.6px;
+  line-height: 15px;
+  letter-spacing: -0.366009px;
+  margin: 0 0 15px 16px;
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.6;
+}
+.services__buttons {
+  display: flex;
+  margin: 0 0 24px 16px;
+}
+.services__button {
+  background-color: #ffffff;
+  margin: 0 6px 0 0;
+  border-radius: 22px;
+  height: 49px;
+  width: auto;
+  padding: 11px 20px 11px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: #000000;
+  border: none;
+}
+.services__button_active {
+  color: #fefefe;
+  background-color: #000000;
+}
+.services__promo {
+  position: relative;
+  margin: 0 auto 8px;
+  width: 343px;
+  height: 378px;
+  border-radius: 12px;
+  background-image: url('../../images/image-service-providers.jpg');
+  display: flex;
+  flex-direction: column;
+}
+.services__subtitle {
+  margin: 19px 0 229px 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.services__get-help-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0 0 12px 24px;
+}
+.services__what-to-do-text {
+  margin: 0 0 24px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  opacity: 0.5;
+  width: 250px;
+}
+.services__icon-promo {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url('../../images/Icon-service-providers.svg');
+  top: 12px;
+  right: 12px;
+}

@@ -1,0 +1,72 @@
+.instruction {
+  width: 290px;
+  height: 400px;
+  margin: 0 8px 0 0;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.instruction__name {
+  margin: 30px 20px 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.5;
+  text-align: center;
+}
+.instruction__case {
+  margin: 0 20px 16px;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.instruction__wrapper {
+  margin: 0 auto 45px;
+  width: 192px;
+  height: 28px;
+  display: flex;
+  gap: 4px;
+}
+.instruction__button {
+  border: none;
+  color: rgba(15, 29, 75, 0.92);
+  padding: 4px 12px;
+  display: flex;
+  background-color: #f3f3fb;
+  border-radius: 21.2291px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.instruction__icon-message {
+  background-image: url('../../images/Icon-instructions-forward.svg');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 15px;
+  margin: 2px 6px 0 0;
+}
+.instruction__icon-like {
+  background-image: url('../../images/Icon-instructions-forward.svg');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 15px;
+  margin: 2px 6px 0 0;
+}
+.instruction__icon-forward {
+  background-image: url('../../images/Icon-instructions-forward.svg');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 15px;
+  margin: 2px 6px 0 0;
+}
+.instruction__image {
+  margin: 0;
+  border-radius: 20px;
+}
+.instruction__image:last-child {
+  background-position-x: left;
+  width: 290px;
+  height: 200px;
+  background-size: cover;
+}
