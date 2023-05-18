@@ -1,0 +1,72 @@
+.stages {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin: 0 0 24px 0;
+  display: none;
+}
+.stages_visible {
+  display: flex;
+}
+.stages__title {
+  margin: 46px 16px 27px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 91%;
+  letter-spacing: -1px;
+  width: 304px;
+}
+.stages__help {
+  position: relative;
+  width: 321px;
+  margin: 0 8px 49px 16px;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #57a4ff;
+  border-radius: 12px;
+}
+.stages__help:last-child {
+  margin-left: 0;
+}
+.stages__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+.stages__subtitle {
+  margin: 12px 12px 8px;
+  font-weight: 500;
+  height: 46px;
+  font-size: 20.8732px;
+  line-height: 23px;
+  letter-spacing: -0.993962px;
+  color: #000000;
+}
+.stages__text {
+  margin: 0 12px 0px;
+  font-weight: 400;
+  width: 220px;
+  font-size: 13.9155px;
+  line-height: 120%;
+  color: #0f1d4b;
+  opacity: 0.5;
+}
+
+.stages__social {
+  color: #147af1;
+}
+.stages__icon-arrow {
+  background-image: url('../../images/icon-arrow-blue-first-step.svg');
+  width: 15px;
+  height: 12px;
+  left: 114px;
+  position: absolute;
+}
+.stages__icon {
+  background-image: url('../../images/icon-help-women.svg');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  margin: 14px 12px 0 59px;
+}

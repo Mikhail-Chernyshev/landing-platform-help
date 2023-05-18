@@ -54,6 +54,9 @@
   color: var(--second-text-color);
   max-width: 180px;
 }
+.case__text-dead {
+  margin-bottom: 13px;
+}
 .case__text_steps {
   margin: 0;
 }

@@ -1,0 +1,94 @@
+.clinic {
+  width: 343px;
+  height: 393px;
+  margin: 0 auto 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.clinic__icon-comments {
+  background-image: url('../../images/Icon-support-teams.svg');
+  margin-right: 4px;
+}
+.clinic__icon-forward {
+  background-image: url('../../images/Icon-support-teams.svg');
+  margin-right: 4px;
+}
+.clinic__button {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  height: 24px;
+}
+.clinic__button_active {
+  background-color: #57a4ff;
+  color: #ffffff;
+}
+.clinic__image {
+  width: 162px;
+  height: 109px;
+  margin: 8px auto 44px;
+}
+.clinic__image-red {
+  width: 106px;
+  height: 94px;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+.clinic__image-man {
+  width: 119px;
+  height: 119px;
+  margin-bottom: 33px;
+}
+.clinic__image-last {
+  width: 158px;
+  height: 158px;
+  margin: -7px auto 10px;
+}
+.clinic__wrapper {
+  margin-bottom: 13px;
+}
+.clinic__title {
+  margin: 0 36px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.954272px;
+}
+.clinic__text {
+  margin: 0 36px 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #8990a8;
+}
+.clinic__street {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 7px 0 0;
+  color: #1e1e1e;
+}
+.clinic__wrapper-x {
+  display: flex;
+  margin: 0 auto 13px;
+}
+.clinic__map {
+  width: 15px;
+  height: 17px;
+  background-image: url('../../images/Icon-map-blue-cliinic.svg');
+  background-repeat: no-repeat;
+}
+.clinic__order {
+  margin: 0 auto 22px;
+  width: 251px;
+  height: 36px;
+  background-color: #57a4ff;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+}

@@ -1,0 +1,96 @@
+.stage {
+  margin: 0 auto 8px;
+  width: 343px;
+  height: auto;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  position: relative;
+}
+.stage-fourth {
+  height: 310px;
+}
+.stage__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.993962px;
+  margin: 24px 16px 12px 16px;
+}
+.stage__span {
+  font-weight: 400;
+  color: #868da4;
+}
+.stage__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  opacity: 0.5;
+  margin: 0 16px 20px;
+}
+.stage__wrapper {
+  display: flex;
+  margin: 0 0 0 0;
+  height: 41px;
+  gap: 6px;
+}
+.stage__symptom {
+  background-color: #e9eef5;
+  border-radius: 21.1009px;
+  padding: 9px 15px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  margin: 0 0 6px 15px;
+  color: rgba(15, 29, 75, 0.92);
+}
+.stage__symptom-third {
+  width: 190px;
+}
+.stage__symptom:nth-child(2) {
+  margin-left: 0px;
+}
+.stage__symptom-fourth {
+  width: 110px;
+}
+.stage__link {
+  margin: 22px 24px 19px 16px;
+  justify-content: space-between;
+  width: 315px;
+  height: 28px;
+}
+.stage__social {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.496981px;
+  color: #147af1;
+}
+.stage__icon-arrow {
+  background-image: url('../../images/icon-arrow-blue-first-step.svg');
+  width: 16px;
+  background-repeat: no-repeat;
+  height: 12px;
+  background-size: cover;
+  margin-top: 8px;
+}
+.stage__link-second {
+  margin-top: 39px;
+}
+.stage__link-fourth {
+  z-index: 15;
+  margin-top: 153px;
+}
+.stage__russia {
+  background-image: url('../../images/russia\ 2.svg');
+  width: 260px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  background-repeat: no-repeat;
+  z-index: 2;
+  opacity: 0.5;
+
+}

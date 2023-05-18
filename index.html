@@ -71,7 +71,7 @@
               alt="cancer case"
             />
           </div>
-          <div class="case__wrapper-vertical-2">
+          <div id="cancer" class="case__wrapper-vertical-2">
             <p class="case__text case__text_steps">4 шага</p>
             <div class="case__wrapper-horizont-2">
               <p class="case__select">Решение от 1,5 до 3 месяцев</p>
@@ -82,6 +82,121 @@
               <div class="case__range"></div>
               <div class="case__range"></div>
               <div class="case__range"></div>
+            </div>
+          </div>
+        </div>
+        <!-- stages cancer -->
+        <!-- stages открывается при открытии онкологии -->
+        <div id="stages" class="stages">
+          <div class="stage">
+            <h2 class="stage__title">
+              <span class="stage__span">1 этап<br /></span>Обнаружение возможных
+              <br />
+              признаков
+            </h2>
+            <p class="stage__text">
+              Смотрите план, как пройти обследование и убедиться в диагнозе
+            </p>
+            <div class="stage__wrapper">
+              <p class="stage__symptom">Резкая боль</p>
+              <p class="stage__symptom">Кровоточивость</p>
+            </div>
+            <p class="stage__symptom stage__symptom-third">
+              Новообразование / Опухоль
+            </p>
+            <p class="stage__symptom stage__symptom-fourth">
+              Резкая потеря веса
+            </p>
+            <div class="community__link stage__link">
+              <p class="community__social stage__social">Выбрать этап</p>
+              <div class="community__icon-arrow stage__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stage">
+            <h2 class="stage__title">
+              <span class="stage__span">2 этап<br /></span>Определение стадии
+            </h2>
+            <p class="stage__text">
+              Смотрите план, как пройти обследование и убедиться в диагнозе
+            </p>
+            <div class="stage__wrapper">
+              <p class="stage__symptom">Выбор клиники</p>
+              <p class="stage__symptom">Помощь от государства</p>
+            </div>
+
+            <div class="community__link stage__link stage__link-second">
+              <p class="community__social stage__social">Выбрать этап</p>
+              <div class="community__icon-arrow stage__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stage">
+            <h2 class="stage__title">
+              <span class="stage__span">3 этап<br /></span>Лечение рака
+            </h2>
+            <p class="stage__text">
+              Смотрите план, как пройти обследование и убедиться в диагнозе
+            </p>
+            <div class="stage__wrapper">
+              <p class="stage__symptom">Операция</p>
+              <p class="stage__symptom">Льготы и выплаты</p>
+            </div>
+
+            <div class="community__link stage__link stage__link-second">
+              <p class="community__social stage__social">Выбрать этап</p>
+              <div class="community__icon-arrow stage__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stage stage-fourth">
+            <div class="stage__russia"></div>
+            <h2 class="stage__title">
+              <span class="stage__span">4 этап<br /></span>Реабилитация
+            </h2>
+            <p class="stage__text">
+              Смотрите план, как пройти обследование и убедиться в диагнозе
+            </p>
+
+            <div class="community__link stage__link stage__link-fourth">
+              <p class="community__social stage__social">Выбрать этап</p>
+              <div class="community__icon-arrow stage__icon-arrow"></div>
+            </div>
+          </div>
+          <h2 class="stages__title">Дополнительная помощь</h2>
+          <div class="stages__wrapper">
+            <div class="stages__help">
+              <div class="stages__wrapper">
+                <h3 class="stages__subtitle">
+                  Материальная помощь <br />
+                  и льготы
+                </h3>
+                <div class="stages__icon"></div>
+              </div>
+
+              <p class="stages__text">
+                Услуги, которые можете получить за счёт Государства, фондов и
+                НКО
+              </p>
+              <div class="community__link stage__link stage__link-second">
+                <p class="community__social stages__social">Выбрать этап</p>
+                <div class="community__icon-arrow stages__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="stages__help">
+              <div class="stages__wrapper">
+                <h3 class="stages__subtitle">
+                  Материальная помощь <br />
+                  и льготы
+                </h3>
+                <div class="stages__icon"></div>
+              </div>
+
+              <p class="stages__text">
+                Услуги, которые можете получить за счёт Государства, фондов и
+                НКО
+              </p>
+              <div class="community__link stage__link stage__link-second">
+                <p class="community__social stages__social">Выбрать этап</p>
+                <div class="community__icon-arrow stages__icon-arrow"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -125,7 +240,7 @@
                 Потеря <br />
                 близкого
               </h3>
-              <p class="case__text">
+              <p class="case__text case__text-dead">
                 Что делать на каждом <br />
                 шаге, какую помощь<br />
                 я могу получить
@@ -318,7 +433,8 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <!-- при появлении онкологии этот блог закрывается -->
+      <section id="services" class="services">
         <h3 class="services__title">Популярные услуги в</h3>
         <div class="services__select">
           <p class="services__city">Екатеринбурге</p>
@@ -343,7 +459,8 @@
         </div>
       </section>
       <!-- список услуг блоками -->
-      <section class="list">
+      <!-- при открытии онкологии этот блок закрывается -->
+      <section id="list" class="list">
         <div class="list__item">
           <h4 class="list__title">310 поставщиков услуг</h4>
           <h5 class="list__subtitle">Зарегистрировать потерю родственника</h5>
@@ -385,18 +502,34 @@
         <button class="list__all">Смотреть все услуги</button>
       </section>
       <section class="instructions">
-        <h2 class="instructions__title">72 инструкции</h2>
-        <h3 class="instructions__subtitle">Жизненная ситуация</h3>
-        <div class="services__buttons">
+        <!-- появляется этот блок и закрывается следующий при онкологии -->
+        <!-- <h2 class="instructions__title">72 инструкции <br />по онкологии</h2> -->
+        <h2 id="instr-title" class="instructions__title">72 инструкции</h2>
+        <!-- hidden next -->
+        <h3 id="instr-subtitle" class="instructions__subtitle">
+          Жизненная ситуация
+        </h3>
+        <!-- появляется этот блок и закрывается следующий при онкологии -->
+        <div id="instr-select" class="instructions__wrapper-x">
+          <div class="instructions__select">
+            <p class="instructions__select-text">Онкология</p>
+            <div class="instructions__icon-down"></div>
+          </div>
+          <div class="instructions__icon-filter"></div>
+        </div>
+        <div id="services-buttons" class="services__buttons">
           <button class="services__button services__button_active">Все</button>
           <button class="services__button">Онкология</button>
           <button class="services__button">Буллинг</button>
           <button class="services__button">Потеря</button>
         </div>
         <div class="instructions__wrapper">
+          <!-- здесь должн меняться контент при открытии онкологии -->
           <div class="instruction">
-            <h4 class="instruction__name">Евгения Кузьмина, психолог</h4>
-            <p class="instruction__case">
+            <h4 id="instr-prof-1" class="instruction__name">
+              Евгения Кузьмина, психолог
+            </h4>
+            <p id="instr-case-1" class="instruction__case">
               Что делать при травле ребёнка в школе?
             </p>
             <div class="instruction__wrapper">
@@ -444,6 +577,146 @@
           </div>
         </div>
       </section>
+      <!-- появляется при открытии онкологии -->
+      <section id="clinics" class="clinics">
+        <h3 class="services__title">Центры обследования в</h3>
+        <div class="services__select">
+          <p class="services__city">Екатеринбурге</p>
+          <div class="services__icon-select"></div>
+        </div>
+        <div class="instructions__wrapper-x">
+          <div class="instructions__select">
+            <p class="instructions__select-text">Онкология</p>
+            <div class="instructions__icon-down"></div>
+          </div>
+          <div class="instructions__icon-filter"></div>
+        </div>
+        <!-- 1 -->
+        <div class="clinic">
+          <img src="./images/image-hand.png" class="clinic__image" />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              1300
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order">Записаться • 1230 ₽</button>
+        </div>
+        <!-- 2 -->
+        <div class="clinic">
+          <img
+            src="./images/image-red-chess.png"
+            class="clinic__image clinic__image-red"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              303
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order">Записаться • 1230 ₽</button>
+        </div>
+        <!-- 3 -->
+        <div class="clinic">
+          <img
+            src="./images/image-man-schema-clinic.png"
+            class="clinic__image clinic__image-man"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              253
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order">Записаться</button>
+        </div>
+        <!-- 4 -->
+        <div class="clinic">
+          <img
+            src="./images/image-last-clinic.png"
+            class="clinic__image clinic__image-last"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              219
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              3.8
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order">Записаться • 1230 ₽</button>
+        </div>
+        <button class="list__all">Показать еще 5</button>
+      </section>
+
       <section class="communitys">
         <h2 class="communitys__title">
           Сообщества <br />в социальных <br />сетях по онкологии
@@ -453,7 +726,9 @@
           Если вы хотите обсудить свою ситуацию с другими, выберите сообщество
         </p>
         <div class="communitys__select">
-          <p class="communitys__type">Все жизненные ситуации</p>
+          <p id="commun-type" class="communitys__type">
+            Все жизненные ситуации
+          </p>
           <div class="communitys__icon-select"></div>
         </div>
         <div class="services__buttons">
@@ -466,8 +741,8 @@
           <div class="community">
             <div class="community__logo"></div>
             <p class="community__people">25000 человек</p>
-            <h4 class="community__service">
-              Психолог онлайн  Психологическая помощь
+            <h4 id="commun-service" class="community__service">
+              Психолог онлайн Психологическая помощь
             </h4>
             <div class="community__link">
               <p class="community__social">Вконтакте</p>
@@ -488,6 +763,17 @@
         </div>
       </section>
     </main>
+    <!-- перед футером появляется этот блок -->
+    <div id="start" class="footer start">
+      <div class="start__icon-up"></div>
+      <div class="start__wrapper">
+        <p class="start__text">
+          4 шага в случае онкологии <br />
+          <span class="start__span">от 10 дней до 1 месяца</span>
+        </p>
+        <button class="start__button">Начать путь</button>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer__nav">
         <div class="footer__icon footer__icon-main"></div>
