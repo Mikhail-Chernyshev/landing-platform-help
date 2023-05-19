@@ -1,0 +1,96 @@
+.health {
+  width: 343px;
+  height: 284px;
+  background-color: #57a4ff;
+  border-radius: 16px;
+  margin: 22px 10px 33px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.health__bg {
+  position: absolute;
+  background-image: url('../../images/bg-heart-for-health.svg');
+  width: 457px;
+  height: 412px;
+  left: 0px;
+  top: 0;
+  background-repeat: no-repeat;
+}
+.health__women {
+  width: 104px;
+  height: 102px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 182px;
+  left: 239px;
+  z-index: 15;
+}
+.health__wrapper-x {
+  display: flex;
+  height: 24px;
+  width: 103px;
+  margin: 20px 220px 16px 20px;
+  gap: 7px;
+}
+.health__icon-heart {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  background-image: url('../../images/icon-heart-header-health.svg');
+  background-position: center;
+  position: absolute;
+}
+.health__icon-heart-bg {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: rgba(240, 240, 240, 0.1);
+  border-radius: 50px;
+}
+.health__name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #c8ddf5;
+  margin: 0;
+}
+.health__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -1.32084px;
+  color: #ffffff;
+  margin: 0 20px 10px 20px;
+  z-index: 15;
+}
+.health__clinic {
+  margin: 0 20px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  z-index: 15;
+}
+.health__line {
+  width: 303px;
+  height: 1px;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.2;
+  margin: 0 20px 20px;
+  z-index: 15;
+}
+.health__data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  max-width: 180px;
+  margin: 0 0 2px 20px;
+}
+.health__data:first-of-type {
+  margin-bottom: 8px;
+}

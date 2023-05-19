@@ -1,0 +1,21 @@
+.hello {
+  display: flex;
+  flex-direction: column;
+}
+.hello::before {
+  background-image: url('../../images/image-bg.png');
+  opacity: 0.4;
+}
+.hello__field {
+  background: #f8f8f8;
+  width: 348px;
+  height: 1045px;
+  margin: 0 6px;
+}
+.hello__hello {
+  margin: 44px 26px 32px 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 29px;
+  letter-spacing: -1px;
+}

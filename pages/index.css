@@ -19,3 +19,9 @@
 @import url('../blocks/clinic/clinic.css');
 @import url('../blocks/clinics/clinics.css');
 @import url('../blocks/start/start.css');
+@import url('../blocks/symptoms/symptoms.css');
+@import url('../blocks/filters/filters.css');
+@import url('../blocks/appointment/appointment.css');
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/hello/hello.css');
+@import url('../blocks/health/health.css');

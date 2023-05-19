@@ -46,6 +46,29 @@
   height: 158px;
   margin: -7px auto 10px;
 }
+.clinic__image-5 {
+  width: 150px;
+  height: 130px;
+  margin: 14px 95px 20px 98px;
+}
+.clinic__image-6 {
+  width: 208px;
+  height: 183px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.clinic__image-7 {
+  width: 210px;
+  height: 210px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.clinic__image-8 {
+  width: 260px;
+  height: 115px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 .clinic__wrapper {
   margin-bottom: 13px;
 }

@@ -1,0 +1,8 @@
+.appointment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+.appointment__wrapper-x {
+  display: flex;
+}
