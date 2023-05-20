@@ -6,7 +6,16 @@
     url('../../images/image-vk.jpg');
   border-radius: 10px;
 }
-.community:last-child {
+.community:nth-child(2) {
+  background: #eff1f3;
+}
+.community:nth-child(3) {
+  background: #eff1f3;
+}
+.community:nth-child(5) {
+  background: #eff1f3;
+}
+.community:nth-child(6) {
   background: #eff1f3;
 }
 .community__logo {
@@ -35,7 +44,8 @@
   padding: 0 0 0 10px;
 }
 .community__service {
-  margin: 0 24px 26px 20px;
+  width: 212px;
+  margin: 0 54px 26px 20px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
@@ -46,8 +56,8 @@
   color: #0f1d4b;
 }
 .community__link {
-  margin: 0 146px 20px 20px;
-  width: 90px;
+  margin: 0 116px 20px 20px;
+  max-width: 125px;
   height: 20px;
   display: flex;
 }

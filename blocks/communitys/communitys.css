@@ -41,7 +41,13 @@
   margin: 23px 23px 0 0;
 }
 .communitys__wrapper {
+  width: auto;
   display: flex;
   overflow: hidden;
   margin: 0 0 37px 16px;
+  overflow-x: scroll;
+}
+
+.communitys__wrapper::-webkit-scrollbar {
+  width: 0;
 }

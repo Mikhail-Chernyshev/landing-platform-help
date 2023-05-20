@@ -28,13 +28,18 @@
   border: none;
 }
 .search__categorys {
-  width: 359px;
+  width: auto;
   margin: 0 0 35px 16px;
-  height: 49px;
-  overflow: hidden;
+  height: 65px;
+  overflow-x: scroll;
   display: flex;
   white-space: nowrap;
+  /* overflow-x: hidden; */
 }
+.search__categorys::-webkit-scrollbar {
+  width: 0;
+}
+
 .search__category {
   color: var(--main-text-color);
   height: 48px;
@@ -47,4 +52,5 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  /* overflow: auto; */
 }

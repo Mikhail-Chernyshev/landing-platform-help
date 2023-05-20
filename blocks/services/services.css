@@ -39,8 +39,14 @@
   opacity: 0.6;
 }
 .services__buttons {
+  width: auto;
+  overflow-x: scroll;
   display: flex;
+  white-space: nowrap;
   margin: 0 0 24px 16px;
+}
+.services__buttons::-webkit-scrollbar {
+  width: 0;
 }
 .services__button {
   background-color: #ffffff;

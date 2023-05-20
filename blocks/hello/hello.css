@@ -1,6 +1,7 @@
 .hello {
   display: flex;
   flex-direction: column;
+  display: none;
 }
 .hello::before {
   background-image: url('../../images/image-bg.png');
@@ -8,7 +9,7 @@
 }
 .hello__field {
   background: #f8f8f8;
-  width: 348px;
+  width: 363px;
   height: 1045px;
   margin: 0 6px;
 }
@@ -18,4 +19,49 @@
   font-size: 32px;
   line-height: 29px;
   letter-spacing: -1px;
+}
+.hello__roadmap {
+  background-color: #ffffff;
+  width: 343px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.hello__wrapper {
+  display: flex;
+  width: 149px;
+  height: 16px;
+  margin: 24px 174px 11px 20px;
+  gap: 10px;
+}
+.hello__icon {
+  margin: 0;
+  width: 11px;
+  height: 12px;
+  background-size: cover;
+}
+.hello__availible-help {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.402439px;
+  color: #000000;
+}
+.hello__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -1.32084px;
+  color: #3d3d3d;
+  margin: 0 52px 2px 20px;
+}
+.hello__title-gray {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -1.32084px;
+  color: #afafaf;
+  margin: 0 140px 36px 20px;
 }

@@ -11,7 +11,9 @@
 <body>
   <div class="page">
     <header class="header">
-      <h1 class="header__title">Платформа помощи</h1>
+      <h1 class="header__title">
+        Платф<span class="header__icon-heart"></span>рма помощи
+      </h1>
       <div class="header__icon-marketplace"></div>
       <div class="header__icon-burger-menu"></div>
     </header>
@@ -50,6 +52,12 @@
           <button class="search__category">Домашнее насилие</button>
           <button class="search__category">Потеря близкого</button>
           <button class="search__category">Выход на пенсию</button>
+          <button class="search__category">Буллинг</button>
+          <button class="search__category">
+            Планирование и рождение ребёнка
+          </button>
+          <button class="search__category">Психологическая помощь</button>
+          <button class="search__category">→</button>
         </div>
       </section>
       <section class="cases">
@@ -487,6 +495,10 @@
           <button class="services__button">Онкология</button>
           <button class="services__button">Буллинг</button>
           <button class="services__button">Потеря</button>
+          <button class="services__button">Выход на пенсию</button>
+          <button class="services__button">Возвращение к мирной жизни</button>
+          <button class="services__button">Домашнее насилие</button>
+          <button class="services__button">Реабилитация</button>
         </div>
         <div class="services__promo">
           <h4 class="services__subtitle">310 поставщиков услуг</h4>
@@ -563,6 +575,10 @@
           <button class="services__button">Онкология</button>
           <button class="services__button">Буллинг</button>
           <button class="services__button">Потеря</button>
+          <button class="services__button">Выход на пенсию</button>
+          <button class="services__button">Возвращение к мирной жизни</button>
+          <button class="services__button">Домашнее насилие</button>
+          <button class="services__button">Реабилитация</button>
         </div>
         <div class="instructions__wrapper">
           <!-- здесь должн меняться контент при открытии онкологии -->
@@ -790,11 +806,66 @@
               <div class="community__icon-arrow"></div>
             </div>
           </div>
+
           <div class="community">
             <div class="community__logo community__logo-dzen"></div>
             <p class="community__people">25000 человек</p>
             <h4 class="community__service community__service-dzen">
               Помощь взрослым онкопациентам
+            </h4>
+            <div class="community__link">
+              <p class="community__social community__social-dzen">Дзен</p>
+              <div class="community__icon-arrow-dzen"></div>
+            </div>
+          </div>
+
+          <div class="community">
+            <div class="community__logo"></div>
+            <p class="community__people">25000 человек</p>
+            <h4
+              id="commun-service"
+              class="community__service community__service-dzen"
+            >
+              Поддержка женщин, кого коснулась Домашнее насилие
+            </h4>
+            <div class="community__link">
+              <p class="community__social community__social-dzen">
+                Одноклассники
+              </p>
+              <div class="community__icon-arrow-dzen"></div>
+            </div>
+          </div>
+
+          <div class="community">
+            <div class="community__logo"></div>
+            <p class="community__people">25000 человек</p>
+            <h4 id="commun-service" class="community__service">
+              Психолог онлайн Психологическая помощь
+            </h4>
+            <div class="community__link">
+              <p class="community__social">Вконтакте</p>
+              <div class="community__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="community">
+            <div class="community__logo"></div>
+            <p class="community__people">25000 человек</p>
+            <h4
+              id="commun-service"
+              class="community__service community__service-dzen"
+            >
+              Психолог онлайн Психологическая помощь
+            </h4>
+            <div class="community__link">
+              <p class="community__social community__social-dzen">Вконтакте</p>
+              <div class="community__icon-arrow-dzen"></div>
+            </div>
+          </div>
+          <div class="community">
+            <div class="community__logo community__logo-dzen"></div>
+            <p class="community__people">25000 человек</p>
+            <h4 class="community__service community__service-dzen">
+              Домашнее насилие: НасилиюНет
             </h4>
             <div class="community__link">
               <p class="community__social community__social-dzen">Дзен</p>
@@ -912,6 +983,196 @@
             src="./images/image-women-for-health-block.png"
           />
           <div class="health__bg"></div>
+        </div>
+        <div class="hello__roadmap">
+          <div class="hello__wrapper">
+            <div class="stages__icon hello__icon"></div>
+            <p class="hello__availible-help">Доступна мат. помощь</p>
+          </div>
+          <h3 class="hello__title">Лечение онкологии</h3>
+          <h4 class="hello__title-gray">от 1 года до 5 лет</h4>
+          <!-- таймлайн -->
+          <!-- таймлайн меняется после второй записи -->
+          <div class="timeline">
+            <div class="timeline__main-line"></div>
+            <div class="timeline__blue-short-line"></div>
+            <div class="timeline__blue-short-line-x"></div>
+            <div class="timeline__gray-short-line-x"></div>
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x-2"
+            ></div>
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x-3"
+            ></div>
+
+            <h4 class="timeline__title">
+              <span class="timeline__title-span timeline__title-span_active"
+                >1</span
+              >
+              Обнаружение <br />
+              возможных признаков
+            </h4>
+            <div class="timeline__step-container timeline__step-container-span">
+              <div
+                class="timeline__step-circle timeline__step-circle_active"
+              ></div>
+              <p class="timeline__step timeline__step_active">
+                Консультация специалиста <br /><span class="timeline__step"
+                  >12 июня</span
+                >
+              </p>
+            </div>
+            <div class="timeline__step-container timeline__step-2">
+              <div class="timeline__step-circle"></div>
+              <p class="timeline__step">Психологическая помощь</p>
+            </div>
+            <h4 class="timeline__title">
+              <span class="timeline__title-span">2</span>
+              Обследования
+            </h4>
+            <div class="timeline__step-container timeline__step-3">
+              <div class="timeline__step-circle"></div>
+              <p class="timeline__step">Консультация специалиста</p>
+            </div>
+            <div class="timeline__step-container timeline__step-4">
+              <div class="timeline__step-circle"></div>
+              <p class="timeline__step">Психологическая помощь</p>
+            </div>
+            <h4 class="timeline__title">
+              <span class="timeline__title-span">3</span>
+
+              Лечение<span class="timeline__title-icon"></span>
+            </h4>
+            <h4 class="timeline__title">
+              <span class="timeline__title-span">4</span>
+
+              Реабилитация<span class="timeline__title-icon"></span>
+            </h4>
+          </div>
+          <!-- второй таймлайн -->
+          <!-- <div class="timeline">
+            <div class="timeline__main-line timeline__main-line-2"></div>
+            <div class="timeline__main-line timeline__main-line-3"></div>
+            <div class="timeline__blue-short-line"></div>
+            <div
+              class="timeline__blue-short-line-x timeline__blue-short-line-x-gray"
+            ></div>
+            <div
+              class="timeline__blue-short-line-x timeline__blue-short-line-x-2"
+            ></div>
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-1"
+            ></div>
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x-2 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-2"
+            ></div>
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x-3 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-3"
+            ></div>
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x-4 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-4"
+            ></div>
+
+            <div
+              class="timeline__gray-short-line-x timeline__gray-short-line-x-5"
+            ></div>
+
+            <h4 class="timeline__title">
+              <span class="timeline__title-span timeline__title-span_active"
+                >1</span
+              >
+              Обнаружение <br />
+              возможных признаков
+            </h4>
+            <div class="timeline__step-container timeline__step-container-span">
+              <div
+                class="timeline__step-circle timeline__step-circle_check"
+              ></div>
+              <p class="timeline__step timeline__step_done">
+                Консультация специалиста <br /><span class="timeline__step"
+                  >12 июня</span
+                >
+              </p>
+            </div>
+            <div
+              class="timeline__step-container timeline__step-2 timeline__step-container-span timeline__step-container-span-2"
+            >
+              <div
+                class="timeline__step-circle timeline__step-circle_check"
+              ></div>
+              <p class="timeline__step timeline__step_done">
+                Психологическая помощь<br /><span class="timeline__step"
+                  >12 июня</span
+                >
+              </p>
+            </div>
+            <h4 class="timeline__title">
+              <span class="timeline__title-span timeline__title-span_active"
+                >2</span
+              >
+              Обследования
+            </h4>
+            <div class="timeline__step-container timeline__step-container-span">
+              <div
+                class="timeline__step-circle timeline__step-circle_check"
+              ></div>
+              <p class="timeline__step timeline__step_done">
+                Консультация специалиста <br /><span class="timeline__step"
+                  >12 июня</span
+                >
+              </p>
+            </div>
+            <div class="timeline__step-container timeline__step-container-span">
+              <div
+                class="timeline__step-circle timeline__step-circle_check"
+              ></div>
+              <p class="timeline__step timeline__step_done">
+                Консультация специалиста <br /><span class="timeline__step"
+                  >12 июня</span
+                >
+              </p>
+            </div>
+            <div class="timeline__step-container timeline__step-container-span">
+              <div
+                class="timeline__step-circle timeline__step-circle_check"
+              ></div>
+              <p class="timeline__step timeline__step_done">
+                Консультация специалиста <br /><span class="timeline__step"
+                  >12 июня</span
+                >
+              </p>
+            </div>
+            <h4 class="timeline__title">
+              <span class="timeline__title-span timeline__title-span_active"
+                >3</span
+              >
+              Лечение<span class="timeline__title-icon"></span>
+            </h4>
+            <div
+              class="timeline__step-container timeline__step-container-span-3 timeline__step-container-span"
+            >
+              <div
+                class="timeline__step-circle timeline__step-circle_active"
+              ></div>
+              <p
+                class="timeline__step timeline__step_active timeline__step_active-2"
+              >
+                Приём ко врачу для бесплатного получения лекарств <br /><span
+                  class="timeline__step"
+                  >24 июля</span
+                >
+              </p>
+            </div>
+            <div class="timeline__step-container timeline__step-3">
+              <div class="timeline__step-circle"></div>
+              <p class="timeline__step">Консультация специалиста</p>
+            </div>
+            <h4 class="timeline__title">
+              <span class="timeline__title-span">4</span>
+
+              Реабилитация<span class="timeline__title-icon"></span>
+            </h4>
+          </div> -->
         </div>
       </div>
     </section>
@@ -1235,6 +1496,7 @@
     <!-- popup success confirm -->
     <div class="popup popup-success">
       <div class="popup-date__content popup-success__content">
+        <!-- при втором типе конферма скрывается этот элемент: -->
         <div class="symptoms__close popup-date__close">X</div>
         <h2 class="popup-success__title">
           Вы записались на приём 12 июня, 12:30 • Четверг
@@ -1245,14 +1507,154 @@
           Региональный центр медико-социального сопровождения
         </p>
         <p class="popup-success__cost">Приём 1690 ₽</p>
+        <!-- при втором типе конферма скрывается этот элемент: -->
         <div class="popup-success__line"></div>
+        <!-- при втором типе конферма скрывается этот элемент: -->
         <p class="popup-success__enter">
           Войдите в личный кабинет, чтобы отслеживать лечение
         </p>
+        <!-- при втором типе конферма скрывается этот элемент: -->
         <p class="popup-success__description">
           Отобразим текущие записи и подскажем следующие шаги
         </p>
+        <!-- при втором типе конферма текст меняется на В личный кабинет -->
         <button class="popup-date__confirm">Создать аккаунт</button>
+      </div>
+    </div>
+    <!-- popup money help -->
+    <div class="popup popup-help">
+      <div class="popup-date__content popup-help__content">
+        <div class="symptoms">
+          <div class="symptoms__close">X</div>
+          <h2 class="symptoms__title popup-help__title">
+            Материальная помощь и льготы от государства
+          </h2>
+          <p class="symptoms__detail">Стадия онкологии</p>
+          <div class="symptoms__buttons">
+            <button class="symptoms__button popup-help__button">Первая</button>
+            <button
+              class="symptoms__button popup-help__button_active popup-help__button"
+            >
+              Вторая
+            </button>
+            <button class="symptoms__button popup-help__button">Третья</button>
+            <button class="symptoms__button popup-help__button">
+              Четвертая
+            </button>
+          </div>
+          <p class="symptoms__detail">Тип помощи</p>
+          <div class="symptoms__buttons popup-help__buttons">
+            <button class="symptoms__button popup-help__button">
+              Бесплатное мед. обслуживание
+            </button>
+            <button
+              class="symptoms__button popup-help__button_active popup-help__button"
+            >
+              Бесплатные лекарства
+            </button>
+          </div>
+          <h5 class="symptoms__what-to-do popup-help__what-to-do">
+            Бесплатные лекарства
+          </h5>
+          <p class="popup-help__text">
+            Лекарства, необходимые для лечения онкологического заболевания,
+            могут предоставляться пациентам бесплатно или по льготным ценам
+            через систему государственных аптечных учреждений.
+          </p>
+          <button class="symptoms__order">Записаться на осмотр</button>
+          <button class="symptoms__order symptoms__get-plan">
+            Скачать план действий
+          </button>
+          <div class="popup-help__container">
+            <div class="popup-help__option">
+              <h3 class="popup-help__subtitle">
+                Получение бесплатных <br />лекарств
+              </h3>
+              <p class="popup-help__description">
+                Перед походом ко врачу-онкологу для получения рецепта, не
+                забудьте взять документы
+              </p>
+              <p class="popup-help__document">
+                Необходимые документы
+                <span class="popup-help__document-span"></span>
+              </p>
+            </div>
+            <div class="popup-help__option">
+              <h3 class="popup-help__subtitle">
+                Аптеки, где можно получить <br />лекарства
+              </h3>
+              <p class="popup-help__description">
+                В г.Архангельск бесплатные лекарства по рецепту доступны в
+                аптечных пунктах выдачи льготных лекарств
+              </p>
+              <p class="popup-help__document">
+                Адреса пунктов выдачи
+                <span class="popup-help__document-span"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="start" class="footer start popup-help-start">
+          <div class="start__icon-up"></div>
+          <div class="start__wrapper">
+            <p class="start__text">
+              Получение материальной <br />
+              помощи и льгот при онкологии <br />
+              <span class="start__span"> от 1 до 5 дней</span>
+            </p>
+            <button class="start__button">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup записаться  -->
+    <div class="popup popup-booking">
+      <div class="popup-date__content popup-booking__content">
+        <div class="symptoms__close popup-booking__close">X</div>
+        <h2 class="popup-booking__title">
+          В какую поликлинику хотите записаться?
+        </h2>
+        <div class="popup-booking__container">
+          <h3 class="popup-booking__subtitle">
+            Бесплатно по ОМС<span class="popup-booking__subtitle-icon"></span>
+          </h3>
+          <p class="popup-booking__text">
+            Пройдите бесплатное обследование в государственной или частной
+            поликлинике
+          </p>
+          <p class="popup-booking__slot">Ближайший слот 25 ИЮНЯ</p>
+        </div>
+        <div class="popup-booking__container">
+          <h3 class="popup-booking__subtitle">
+            Платно<span class="popup-booking__subtitle-icon"></span>
+          </h3>
+          <p class="popup-booking__text">
+            Найдите список частных клиник с платными услугами. Могут быстрее
+            оказать помощь
+          </p>
+          <p class="popup-booking__slot">Ближайший слот завтра</p>
+        </div>
+      </div>
+    </div>
+    <!-- popup gosuslugi -->
+    <div class="popup popup-gosuslugi">
+      <div class="popup-date__content popup-gosuslugi__content">
+        <div class="symptoms__close popup-booking__close">X</div>
+        <h2 class="popup-gosuslugi__title">
+          Войдите через Госуслуги,<br />
+          чтобы записаться в<br />
+          государственную<br />
+          поликлинику
+        </h2>
+        <p class="popup-gosuslugi__subtitle">
+          Найдём вашу поликлинику и поможем быстро и просто записаться
+          к специалисту
+        </p>
+        <p class="popup-gosuslugi__gosuslugi">
+          Войти через Госуслуги<span
+            class="popup-gosuslugi__gosuslugi-icon"
+          ></span>
+        </p>
       </div>
     </div>
   </div>
