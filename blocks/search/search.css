@@ -34,7 +34,6 @@
   overflow-x: scroll;
   display: flex;
   white-space: nowrap;
-  /* overflow-x: hidden; */
 }
 .search__categorys::-webkit-scrollbar {
   width: 0;

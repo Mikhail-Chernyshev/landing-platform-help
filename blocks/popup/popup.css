@@ -15,8 +15,10 @@
   z-index: 4;
 }
 .popup_opened {
-  visibility: visible;
-  opacity: 1;
+  display: flex;
+}
+.popup_closed {
+  display: none;
 }
 .popup-date__content {
   position: relative;
@@ -26,6 +28,7 @@
   width: 375px;
   height: 690px;
   z-index: 12;
+  border-radius: 20px 20px 0px 0px;
 }
 .popup-date__close {
   border-radius: 0;
@@ -140,6 +143,9 @@
   border: none;
   margin: 0 32px;
   color: #ffffff;
+}
+.popup-date__confirm_hidden {
+  display: none;
 }
 .popup-success__title {
   font-weight: 500;

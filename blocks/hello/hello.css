@@ -3,6 +3,9 @@
   flex-direction: column;
   display: none;
 }
+.hello_opened{
+  display: flex;
+}
 .hello::before {
   background-image: url('../../images/image-bg.png');
   opacity: 0.4;

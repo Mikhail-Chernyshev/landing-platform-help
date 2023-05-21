@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
 }
+.instructions_unvisible {
+  display: none;
+}
 .instructions__title {
   font-weight: 500;
   font-size: 26px;
@@ -20,8 +23,12 @@
 }
 .instructions__wrapper {
   display: flex;
-  overflow: hidden;
+  overflow-x: scroll;
   margin: 0 0 70px 16px;
+  overflow-y: hidden;
+}
+.instructions__wrapper::-webkit-scrollbar {
+  width: 0;
 }
 .instructions__wrapper-x {
   display: none;
@@ -30,6 +37,11 @@
   gap: 8px;
   margin: 0 auto 24px;
 }
+
+.instructions__wrapper-x-2 {
+  display: none;
+  justify-content: space-around;
+}
 .instructions__select {
   display: flex;
   width: 245px;
@@ -37,6 +49,12 @@
   background-color: #ffffff;
   border-radius: 22.373px;
   padding: 15px 19.5764px;
+}
+.instructions__select-2 {
+  width: auto !important;
+}
+.instructions__select-text-2 {
+  width: auto !important;
 }
 .instructions__select-text {
   margin: 0 27px 0 0;

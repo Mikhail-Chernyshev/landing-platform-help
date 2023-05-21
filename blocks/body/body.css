@@ -9,4 +9,8 @@ body {
   --second-text-color: #8990a8;
   position: relative;
   border: 1px solid gray;
+  /* overflow: hidden; */
+}
+.content {
+  margin-bottom: 68px;
 }

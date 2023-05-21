@@ -81,6 +81,7 @@
   margin: 0 0 0px;
 }
 .popup-help-start {
-  margin-top: -10px;
+  margin-top: 10px;
+  display: flex;
   height: 94px;
 }

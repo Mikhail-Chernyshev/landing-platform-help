@@ -10,7 +10,7 @@
 
 <body>
   <div class="page">
-    <header class="header">
+    <header id="header" class="header">
       <h1 class="header__title">
         Платф<span class="header__icon-heart"></span>рма помощи
       </h1>
@@ -18,7 +18,306 @@
       <div class="header__icon-burger-menu"></div>
     </header>
     <main class="content">
-      <section class="what-the-platform">
+      <!-- popup money help -->
+      <div id="symptoms-2" class="symptoms symptoms-second">
+        <div class="symptoms__close">X</div>
+        <h2 class="symptoms__title popup-help__title">
+          Материальная помощь и льготы от государства
+        </h2>
+        <p class="symptoms__detail">Стадия онкологии</p>
+        <div class="symptoms__buttons">
+          <button class="symptoms__button popup-help__button">Первая</button>
+          <button
+            class="symptoms__button popup-help__button_active popup-help__button"
+          >
+            Вторая
+          </button>
+          <button class="symptoms__button popup-help__button">Третья</button>
+          <button class="symptoms__button popup-help__button">Четвертая</button>
+        </div>
+        <p class="symptoms__detail">Тип помощи</p>
+        <div class="symptoms__buttons popup-help__buttons">
+          <button class="symptoms__button popup-help__button">
+            Бесплатное мед. обслуживание
+          </button>
+          <button
+            class="symptoms__button popup-help__button_active popup-help__button"
+          >
+            Бесплатные лекарства
+          </button>
+        </div>
+        <h5 class="symptoms__what-to-do popup-help__what-to-do">
+          Бесплатные лекарства
+        </h5>
+        <p class="popup-help__text">
+          Лекарства, необходимые для лечения онкологического заболевания, могут
+          предоставляться пациентам бесплатно или по льготным ценам через
+          систему государственных аптечных учреждений.
+        </p>
+        <button id="symptoms-order-2" class="symptoms__order">
+          Записаться на осмотр
+        </button>
+        <button class="symptoms__order symptoms__get-plan">
+          Скачать план действий
+        </button>
+        <div class="popup-help__container">
+          <div class="popup-help__option">
+            <h3 class="popup-help__subtitle">
+              Получение бесплатных <br />лекарств
+            </h3>
+            <p class="popup-help__description">
+              Перед походом ко врачу-онкологу для получения рецепта, не забудьте
+              взять документы
+            </p>
+            <p class="popup-help__document">
+              Необходимые документы
+              <span class="popup-help__document-span"></span>
+            </p>
+          </div>
+          <div class="popup-help__option">
+            <h3 class="popup-help__subtitle">
+              Аптеки, где можно получить <br />лекарства
+            </h3>
+            <p class="popup-help__description">
+              В г.Архангельск бесплатные лекарства по рецепту доступны в
+              аптечных пунктах выдачи льготных лекарств
+            </p>
+            <p class="popup-help__document">
+              Адреса пунктов выдачи
+              <span class="popup-help__document-span"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- появляется после записи к первому врачу -->
+      <section id="hello" class="hello">
+        <h2 class="hello__hello">Здравствуйте</h2>
+        <div class="hello__field">
+          <div id="health" class="health">
+            <div class="health__wrapper-x">
+              <div class="health__icon-heart-bg">
+                <div class="health__icon-heart"></div>
+              </div>
+              <p class="health__name">ЗДОРОВЬЕ</p>
+            </div>
+            <h3 class="health__title">
+              Первичное обследование новообразования
+            </h3>
+            <p class="health__clinic">
+              Региональный центр медико-социального сопровождения
+            </p>
+            <div class="health__line"></div>
+            <p class="health__data">12 апреля, 12:30 • Четверг</p>
+            <p class="health__data">Тверская, 15</p>
+            <p class="health__data">+7 495 607-69-98</p>
+            <img
+              class="health__women"
+              src="./images/image-women-for-health-block.png"
+            />
+            <div class="health__bg"></div>
+          </div>
+          <div class="hello__roadmap">
+            <div class="hello__wrapper">
+              <div class="stages__icon hello__icon"></div>
+              <p class="hello__availible-help">Доступна мат. помощь</p>
+            </div>
+            <h3 class="hello__title">Лечение онкологии</h3>
+            <h4 class="hello__title-gray">от 1 года до 5 лет</h4>
+
+            <div id="timeline-1" class="timeline">
+              <div class="timeline__main-line"></div>
+              <div class="timeline__blue-short-line"></div>
+              <div class="timeline__blue-short-line-x"></div>
+              <div class="timeline__gray-short-line-x"></div>
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x-2"
+              ></div>
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x-3"
+              ></div>
+
+              <h4 class="timeline__title">
+                <span class="timeline__title-span timeline__title-span_active"
+                  >1</span
+                >
+                Обнаружение <br />
+                возможных признаков
+              </h4>
+              <div
+                class="timeline__step-container timeline__step-container-span"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_active"
+                ></div>
+                <p class="timeline__step timeline__step_active">
+                  Консультация специалиста <br /><span class="timeline__step"
+                    >12 июня</span
+                  >
+                </p>
+              </div>
+              <div class="timeline__step-container timeline__step-2">
+                <div class="timeline__step-circle"></div>
+                <p class="timeline__step">Психологическая помощь</p>
+              </div>
+              <h4 class="timeline__title">
+                <span class="timeline__title-span">2</span>
+                Обследования
+              </h4>
+              <div class="timeline__step-container timeline__step-3">
+                <div class="timeline__step-circle"></div>
+                <p class="timeline__step">Консультация специалиста</p>
+              </div>
+              <div class="timeline__step-container timeline__step-4">
+                <div class="timeline__step-circle"></div>
+                <p class="timeline__step">Психологическая помощь</p>
+              </div>
+              <h4 class="timeline__title">
+                <span class="timeline__title-span">3</span>
+
+                Лечение<span class="timeline__title-icon"></span>
+              </h4>
+              <h4 class="timeline__title">
+                <span class="timeline__title-span">4</span>
+
+                Реабилитация<span class="timeline__title-icon"></span>
+              </h4>
+            </div>
+            <!-- second timeline -->
+            <div id="timeline-2" class="timeline timeline_hidden">
+              <div class="timeline__main-line timeline__main-line-2"></div>
+              <div class="timeline__main-line timeline__main-line-3"></div>
+              <div class="timeline__blue-short-line"></div>
+              <div
+                class="timeline__blue-short-line-x timeline__blue-short-line-x-gray"
+              ></div>
+              <div
+                class="timeline__blue-short-line-x timeline__blue-short-line-x-2"
+              ></div>
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-1"
+              ></div>
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x-2 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-2"
+              ></div>
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x-3 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-3"
+              ></div>
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x-4 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-4"
+              ></div>
+
+              <div
+                class="timeline__gray-short-line-x timeline__gray-short-line-x-5"
+              ></div>
+
+              <h4 class="timeline__title">
+                <span class="timeline__title-span timeline__title-span_active"
+                  >1</span
+                >
+                Обнаружение <br />
+                возможных признаков
+              </h4>
+              <div
+                class="timeline__step-container timeline__step-container-span"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_check"
+                ></div>
+                <p class="timeline__step timeline__step_done">
+                  Консультация специалиста <br /><span class="timeline__step"
+                    >12 июня</span
+                  >
+                </p>
+              </div>
+              <div
+                class="timeline__step-container timeline__step-2 timeline__step-container-span timeline__step-container-span-2"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_check"
+                ></div>
+                <p class="timeline__step timeline__step_done">
+                  Психологическая помощь<br /><span class="timeline__step"
+                    >12 июня</span
+                  >
+                </p>
+              </div>
+              <h4 class="timeline__title">
+                <span class="timeline__title-span timeline__title-span_active"
+                  >2</span
+                >
+                Обследования
+              </h4>
+              <div
+                class="timeline__step-container timeline__step-container-span"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_check"
+                ></div>
+                <p class="timeline__step timeline__step_done">
+                  Консультация специалиста <br /><span class="timeline__step"
+                    >12 июня</span
+                  >
+                </p>
+              </div>
+              <div
+                class="timeline__step-container timeline__step-container-span"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_check"
+                ></div>
+                <p class="timeline__step timeline__step_done">
+                  Консультация специалиста <br /><span class="timeline__step"
+                    >12 июня</span
+                  >
+                </p>
+              </div>
+              <div
+                class="timeline__step-container timeline__step-container-span"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_check"
+                ></div>
+                <p class="timeline__step timeline__step_done">
+                  Консультация специалиста <br /><span class="timeline__step"
+                    >12 июня</span
+                  >
+                </p>
+              </div>
+              <h4 class="timeline__title">
+                <span class="timeline__title-span timeline__title-span_active"
+                  >3</span
+                >
+                Лечение<span class="timeline__title-icon"></span>
+              </h4>
+              <div
+                class="timeline__step-container timeline__step-container-span-3 timeline__step-container-span"
+              >
+                <div
+                  class="timeline__step-circle timeline__step-circle_active"
+                ></div>
+                <p
+                  class="timeline__step timeline__step_active timeline__step_active-2"
+                >
+                  Приём ко врачу для бесплатного получения лекарств <br /><span
+                    class="timeline__step"
+                    >24 июля</span
+                  >
+                </p>
+              </div>
+              <div class="timeline__step-container timeline__step-3">
+                <div class="timeline__step-circle"></div>
+                <p class="timeline__step">Консультация специалиста</p>
+              </div>
+              <h4 class="timeline__title">
+                <span class="timeline__title-span">4</span>
+
+                Реабилитация<span class="timeline__title-icon"></span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-platform" class="what-the-platform">
         <div class="what-the-platform__heart-wrapper">
           <div class="what-the-platform__heart-violet"></div>
           <div class="what-the-platform__heart-white"></div>
@@ -40,7 +339,7 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section id="search" class="search">
         <div class="search__wrapper">
           <div class="search__icon"></div>
           <input
@@ -60,7 +359,125 @@
           <button class="search__category">→</button>
         </div>
       </section>
-      <section class="cases">
+      <!-- появляется при нажатии на первый этап -->
+      <div id="symptomsAfterClickFirstStage" class="symptoms">
+        <div class="symptoms__close">X</div>
+        <h2 class="symptoms__title">
+          Обнаружение возможных признаков онкологии
+        </h2>
+        <p class="symptoms__detail">Уточните ситуацию</p>
+        <div class="symptoms__buttons">
+          <button class="symptoms__button symptoms__button_active">
+            Найдено новообразование / опухоль
+          </button>
+          <button class="symptoms__button">Резкое изменение веса</button>
+        </div>
+        <p class="symptoms__text">
+          Появление новообразования связано <br />
+          с ненормальным ростом и делением клеток в организме. Нерегулярные
+          мутации генов могут привести к изменению клеточного роста, что
+          <br />может стать основной причиной образования опухолей или
+          новообразований. Для <br />
+          предотвращения более серьезного развития, запишитесь к специалисту
+          <br />
+          на осмотр
+        </p>
+        <h5 class="symptoms__what-to-do">
+          При обнаружении симптомов онкозаболевания запишитесь на обследование
+          к специалисту
+        </h5>
+        <div class="symptoms__types">
+          <button class="symptoms__type">Государственная клиника</button>
+          <button class="symptoms__type">Частная клиника</button>
+        </div>
+        <button id="symptoms-order-1" class="symptoms__order">
+          Записаться на осмотр
+        </button>
+        <button class="symptoms__order symptoms__get-plan">
+          Скачать план действий
+        </button>
+      </div>
+      <!-- section else help -->
+      <div id="extra-help" class="stages__extra-help">
+        <h2 id="extra-help-title" class="stages__title">
+          Дополнительная помощь
+        </h2>
+        <div id="stage-wrapper-x" class="stages__wrapper-x">
+          <div id="stages-help-1" class="stages__help">
+            <div class="stages__wrapper">
+              <h3 id="extra-help-subtitle-1" class="stages__subtitle">
+                Материальная помощь <br />
+                и льготы бесплатные лекарства
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <p id="extra-help-text-1" class="stages__text">
+              Услуги, которые можете получить за счёт Государства, фондов и НКО
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <p id="extra-help-get" class="community__social stages__social">
+                Выбрать
+              </p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stages__help">
+            <div class="stages__wrapper">
+              <h3 id="extra-help-subtitle-2" class="stages__subtitle">
+                Нематериальная <br />
+                помощь
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <p id="extra-help-text-2" class="stages__text">
+              Консультации НКО и специалистов
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <p id="extra-help-get-2" class="community__social stages__social">
+                Выбрать
+              </p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stages__help">
+            <div class="stages__wrapper">
+              <h3 id="extra-help-subtitle-3" class="stages__subtitle">
+                Юридическая <br />
+                помощь
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <p id="extra-help-text-3" class="stages__text">
+              Помощь в юридических вопросах от специалистов
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <!-- при нажатии на первый этап меняется текст на Получить услугу -->
+              <p class="community__social stages__social">Выбрать</p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stages__help">
+            <div class="stages__wrapper">
+              <!-- при нажатии на первый этап меняется текст на Получайте психологическую поддержку -->
+              <h3 id="extra-help-subtitle-4" class="stages__subtitle">
+                Психологическая <br />
+                помощь
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <!-- при нажатии на первый этап меняется текст на Диагноз онкологического заболевания может быть трудным и вызвать эмоциональное напряжение, поэтому важно получить своевременную психологическую поддержку -->
+            <p id="extra-help-text-4" class="stages__text">
+              Моральная поддержка от профессионалов
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <!-- при нажатии на первый этап меняется текст на Получить услугу -->
+              <p class="community__social stages__social">Выбрать</p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="cases" class="cases">
         <!-- cancer -->
         <div class="case">
           <div class="case__wrapper-horizont">
@@ -94,9 +511,10 @@
           </div>
         </div>
         <!-- stages cancer -->
+
         <!-- stages открывается при открытии онкологии -->
         <div id="stages" class="stages">
-          <div class="stage">
+          <div id="stage-first" class="stage">
             <h2 class="stage__title">
               <span class="stage__span">1 этап<br /></span>Обнаружение возможных
               <br />
@@ -120,42 +538,7 @@
               <div class="community__icon-arrow stage__icon-arrow"></div>
             </div>
           </div>
-          <!-- появляется при нажатии на первый этап -->
-          <div class="symptoms">
-            <div class="symptoms__close">X</div>
-            <h2 class="symptoms__title">
-              Обнаружение возможных признаков онкологии
-            </h2>
-            <p class="symptoms__detail">Уточните ситуацию</p>
-            <div class="symptoms__buttons">
-              <button class="symptoms__button symptoms__button_active">
-                Найдено новообразование / опухоль
-              </button>
-              <button class="symptoms__button">Резкое изменение веса</button>
-            </div>
-            <p class="symptoms__text">
-              Появление новообразования связано <br />
-              с ненормальным ростом и делением клеток в организме. Нерегулярные
-              мутации генов могут привести к изменению клеточного роста, что
-              <br />может стать основной причиной образования опухолей или
-              новообразований. Для <br />
-              предотвращения более серьезного развития, запишитесь к специалисту
-              <br />
-              на осмотр
-            </p>
-            <h5 class="symptoms__what-to-do">
-              При обнаружении симптомов онкозаболевания запишитесь
-              на обследование к специалисту
-            </h5>
-            <div class="symptoms__types">
-              <button class="symptoms__type">Государственная клиника</button>
-              <button class="symptoms__type">Частная клиника</button>
-            </div>
-            <button class="symptoms__order">Записаться на осмотр</button>
-            <button class="symptoms__order symptoms__get-plan">
-              Скачать план действий
-            </button>
-          </div>
+
           <div class="stage">
             <h2 class="stage__title">
               <span class="stage__span">2 этап<br /></span>Определение стадии
@@ -202,50 +585,6 @@
             <div class="community__link stage__link stage__link-fourth">
               <p class="community__social stage__social">Выбрать этап</p>
               <div class="community__icon-arrow stage__icon-arrow"></div>
-            </div>
-          </div>
-          <!-- h2 меняется текст на Как еще можем помочь при нажатии на первый этап -->
-          <h2 class="stages__title">Дополнительная помощь</h2>
-          <div class="stages__wrapper">
-            <div class="stages__help">
-              <div class="stages__wrapper">
-                <!-- при нажатии на первый этап меняется текст на Получайте психологическую поддержку -->
-                <h3 class="stages__subtitle">
-                  Материальная помощь <br />
-                  и льготы
-                </h3>
-                <div class="stages__icon"></div>
-              </div>
-              <!-- при нажатии на первый этап меняется текст на Диагноз онкологического заболевания может быть трудным и вызвать эмоциональное напряжение, поэтому важно получить своевременную психологическую поддержку -->
-              <p class="stages__text">
-                Услуги, которые можете получить за счёт Государства, фондов и
-                НКО
-              </p>
-              <div class="community__link stage__link stage__link-second">
-                <!-- при нажатии на первый этап меняется текст на Получить услугу -->
-                <p class="community__social stages__social">Выбрать</p>
-                <div class="community__icon-arrow stages__icon-arrow"></div>
-              </div>
-            </div>
-            <div class="stages__help">
-              <div class="stages__wrapper">
-                <!-- при нажатии на первй этап вставляется Проконсультируйтесь со врачом-онкологом -->
-                <h3 class="stages__subtitle">
-                  Материальная помощь <br />
-                  и льготы
-                </h3>
-                <div class="stages__icon"></div>
-              </div>
-              <!-- при нажатии на первый этап вставляется Онкологические заболевания подразумевают проведение регулярных консультаций со специалистом -->
-              <p class="stages__text">
-                Услуги, которые можете получить за счёт Государства, фондов и
-                НКО
-              </p>
-              <div class="community__link stage__link stage__link-second">
-                <!-- при нажатии на первый этап текст меняется на Получить услугу -->
-                <p class="community__social stages__social">Выбрать</p>
-                <div class="community__icon-arrow stages__icon-arrow"></div>
-              </div>
             </div>
           </div>
         </div>
@@ -554,21 +893,35 @@
         </div>
         <button class="list__all">Смотреть все услуги</button>
       </section>
-      <section class="instructions">
-        <!-- появляется этот блок и закрывается следующий при онкологии -->
-        <!-- <h2 class="instructions__title">72 инструкции <br />по онкологии</h2> -->
+      <section id="instructions" class="instructions">
         <h2 id="instr-title" class="instructions__title">72 инструкции</h2>
-        <!-- hidden next -->
         <h3 id="instr-subtitle" class="instructions__subtitle">
           Жизненная ситуация
         </h3>
-        <!-- появляется этот блок и закрывается следующий при онкологии -->
         <div id="instr-select" class="instructions__wrapper-x">
           <div class="instructions__select">
             <p class="instructions__select-text">Онкология</p>
             <div class="instructions__icon-down"></div>
           </div>
           <div class="instructions__icon-filter"></div>
+        </div>
+        <!-- zamena -->
+        <div
+          id="instr-select-2"
+          class="instructions__wrapper-x instructions__wrapper-x-2"
+        >
+          <div class="instructions__select instructions__select-2">
+            <p class="instructions__select-text instructions__select-text-2">
+              Онкология
+            </p>
+            <div class="instructions__icon-down"></div>
+          </div>
+          <div class="instructions__select instructions__select-2">
+            <p class="instructions__select-text instructions__select-text-2">
+              Обследования
+            </p>
+            <div class="instructions__icon-down"></div>
+          </div>
         </div>
         <div id="services-buttons" class="services__buttons">
           <button class="services__button services__button_active">Все</button>
@@ -612,6 +965,52 @@
             <h4 class="instruction__name">Василий Киричевский, юрист</h4>
             <p class="instruction__case">
               Как получить пособие после рождения ребёнка?
+            </p>
+            <div class="instruction__wrapper">
+              <button class="instruction__button">
+                <div class="instruction__icon-message"></div>
+                12
+              </button>
+              <button class="instruction__button">
+                <div class="instruction__icon-like"></div>
+                135
+              </button>
+              <button class="instruction__button">
+                <div class="instruction__icon-forward"></div>
+                14
+              </button>
+            </div>
+            <img
+              class="instruction__image"
+              src="./images/image-instruction-cut.jpg"
+            />
+          </div>
+          <div class="instruction">
+            <h4 class="instruction__name">Анастасия Яровая, врач-онколог</h4>
+            <p class="instruction__case">Процесс лечения рака</p>
+            <div class="instruction__wrapper">
+              <button class="instruction__button">
+                <div class="instruction__icon-message"></div>
+                12
+              </button>
+              <button class="instruction__button">
+                <div class="instruction__icon-like"></div>
+                135
+              </button>
+              <button class="instruction__button">
+                <div class="instruction__icon-forward"></div>
+                14
+              </button>
+            </div>
+            <img
+              class="instruction__image"
+              src="./images/image-instruction-cut.jpg"
+            />
+          </div>
+          <div class="instruction">
+            <h4 class="instruction__name">Василий Киричевский, юрист</h4>
+            <p class="instruction__case">
+              Что делать при нахождении опухоли или иного новобразования
             </p>
             <div class="instruction__wrapper">
               <button class="instruction__button">
@@ -774,7 +1173,7 @@
         <button class="list__all">Показать еще 5</button>
       </section>
 
-      <section class="communitys">
+      <section id="communitys" class="communitys">
         <h2 class="communitys__title">
           Сообщества <br />в социальных <br />сетях по онкологии
         </h2>
@@ -798,7 +1197,7 @@
           <div class="community">
             <div class="community__logo"></div>
             <p class="community__people">25000 человек</p>
-            <h4 id="commun-service" class="community__service">
+            <h4 id="commun-service-2" class="community__service">
               Психолог онлайн Психологическая помощь
             </h4>
             <div class="community__link">
@@ -818,12 +1217,12 @@
               <div class="community__icon-arrow-dzen"></div>
             </div>
           </div>
-
+          <!-- 3 -->
           <div class="community">
             <div class="community__logo"></div>
             <p class="community__people">25000 человек</p>
             <h4
-              id="commun-service"
+              id="commun-service-3"
               class="community__service community__service-dzen"
             >
               Поддержка женщин, кого коснулась Домашнее насилие
@@ -835,11 +1234,11 @@
               <div class="community__icon-arrow-dzen"></div>
             </div>
           </div>
-
+          <!-- 4 -->
           <div class="community">
             <div class="community__logo"></div>
             <p class="community__people">25000 человек</p>
-            <h4 id="commun-service" class="community__service">
+            <h4 id="commun-service-4" class="community__service">
               Психолог онлайн Психологическая помощь
             </h4>
             <div class="community__link">
@@ -847,11 +1246,12 @@
               <div class="community__icon-arrow"></div>
             </div>
           </div>
+          <!-- 5 -->
           <div class="community">
             <div class="community__logo"></div>
             <p class="community__people">25000 человек</p>
             <h4
-              id="commun-service"
+              id="commun-service-5"
               class="community__service community__service-dzen"
             >
               Психолог онлайн Психологическая помощь
@@ -861,10 +1261,14 @@
               <div class="community__icon-arrow-dzen"></div>
             </div>
           </div>
+          <!-- 6 -->
           <div class="community">
             <div class="community__logo community__logo-dzen"></div>
             <p class="community__people">25000 человек</p>
-            <h4 class="community__service community__service-dzen">
+            <h4
+              id="commun-service-6"
+              class="community__service community__service-dzen"
+            >
               Домашнее насилие: НасилиюНет
             </h4>
             <div class="community__link">
@@ -874,6 +1278,726 @@
           </div>
         </div>
       </section>
+      <!-- появляется при нажатии на "Записаться на осмотр" -->
+      <section id="appointment" class="appointment">
+        <div class="symptoms__close">X</div>
+        <h3 class="services__title">Центры обследования в</h3>
+        <div class="services__select">
+          <p class="services__city">Екатеринбурге</p>
+          <div class="services__icon-select"></div>
+        </div>
+        <div id="instr-select" class="instructions__wrapper-x stages_visible">
+          <div class="instructions__select">
+            <p class="instructions__select-text">Онкология</p>
+            <div class="instructions__icon-down"></div>
+          </div>
+          <div class="instructions__icon-filter"></div>
+        </div>
+        <!-- 1 -->
+        <div class="clinic">
+          <img src="./images/image-hand.png" class="clinic__image" />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              1300
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 2 -->
+        <div class="clinic">
+          <img
+            src="./images/image-red-chess.png"
+            class="clinic__image clinic__image-red"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              303
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 3 -->
+        <div class="clinic">
+          <img
+            src="./images/image-man-schema-clinic.png"
+            class="clinic__image clinic__image-man"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              253
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">Записаться</button>
+        </div>
+        <!-- 4 -->
+        <div class="clinic">
+          <img
+            src="./images/image-last-clinic.png"
+            class="clinic__image clinic__image-last"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              219
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              3.8
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 5 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-5.png"
+            class="clinic__image clinic__image-5"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              1300
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 6 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-6.png"
+            class="clinic__image clinic__image-6"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              303
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 7 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-7.png"
+            class="clinic__image clinic__image-7"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              253
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">Записаться</button>
+        </div>
+        <!-- 8 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-8.png"
+            class="clinic__image clinic__image-8"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              219
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              3.8
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-1">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+      </section>
+
+      <!-- появляется при нажатии на "Записаться на осмотр" -->
+      <section id="appointment-2" class="appointment">
+        <div class="symptoms__close">X</div>
+        <h3 class="services__title">Центры обследования в</h3>
+        <div class="services__select">
+          <p class="services__city">Екатеринбурге</p>
+          <div class="services__icon-select"></div>
+        </div>
+        <div id="instr-select" class="instructions__wrapper-x stages_visible">
+          <div class="instructions__select">
+            <p class="instructions__select-text">Онкология</p>
+            <div class="instructions__icon-down"></div>
+          </div>
+          <div class="instructions__icon-filter"></div>
+        </div>
+        <!-- 1 -->
+        <div class="clinic">
+          <img src="./images/image-hand.png" class="clinic__image" />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              1300
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">
+            Записаться • 1230 ₽
+          </button>
+          <button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 2 -->
+        <div class="clinic">
+          <img
+            src="./images/image-red-chess.png"
+            class="clinic__image clinic__image-red"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              303
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">
+            Записаться • 1230 ₽</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 3 -->
+        <div class="clinic">
+          <img
+            src="./images/image-man-schema-clinic.png"
+            class="clinic__image clinic__image-man"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              253
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">Записаться</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 4 -->
+        <div class="clinic">
+          <img
+            src="./images/image-last-clinic.png"
+            class="clinic__image clinic__image-last"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              219
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              3.8
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">
+            Записаться • 1230 ₽</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 5 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-5.png"
+            class="clinic__image clinic__image-5"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              1300
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">
+            Записаться • 1230 ₽</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 6 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-6.png"
+            class="clinic__image clinic__image-6"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              303
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4.9
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">
+            Записаться • 1230 ₽</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 7 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-7.png"
+            class="clinic__image clinic__image-7"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              253
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              4
+            </button>
+            <button class="instruction__button clinic__button">
+              Госклиника
+            </button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">Записаться</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+        <!-- 8 -->
+        <div class="clinic">
+          <img
+            src="./images/image-clinic-8.png"
+            class="clinic__image clinic__image-8"
+          />
+          <div class="instruction__wrapper clinic__wrapper">
+            <button class="instruction__button clinic__button">
+              <div
+                class="instruction__icon-message clinic__icon-comments"
+              ></div>
+              219
+            </button>
+            <button
+              class="instruction__button clinic__button clinic__button_active"
+            >
+              <div class="instruction__icon-like clinic__icon-forward"></div>
+              3.8
+            </button>
+            <button class="instruction__button clinic__button">Частная</button>
+          </div>
+          <h3 class="clinic__title">Первичное обследование новообразования</h3>
+          <p class="clinic__text">
+            Екатеринбургский региональный центр социального сопровождения
+          </p>
+          <div class="clinic__wrapper-x">
+            <p class="clinic__street">Ул. Ленина, 15</p>
+            <div class="clinic__map"></div>
+          </div>
+          <button class="clinic__order clinic__order-2">
+            Записаться • 1230 ₽</button
+          ><button class="clinic__order clinic__order-3">
+            Записаться • 1230 ₽
+          </button>
+        </div>
+      </section>
+
+      <!-- popup choose date -->
+      <div class="popup popup-date">
+        <div class="popup-date__content">
+          <div class="symptoms__close popup-date__close">X</div>
+          <div class="popup-date__container-month">
+            <div class="popup-date__arrow-left"></div>
+            <p class="popup-date__month">Май</p>
+            <div class="popup-date__arrow-right"></div>
+          </div>
+          <div class="popup-date__wrapper-week">
+            <p class="popup-date__day">Пн</p>
+            <p class="popup-date__day">Вт</p>
+            <p class="popup-date__day">Ср</p>
+            <p class="popup-date__day">Чт</p>
+            <p class="popup-date__day">Пт</p>
+            <p class="popup-date__day">Сб</p>
+            <p class="popup-date__day">Вс</p>
+          </div>
+          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+            <p class="popup-date__date">1</p>
+            <p class="popup-date__date popup-date__date_active">2</p>
+            <p class="popup-date__date popup-date__date_availible">3</p>
+            <p class="popup-date__date">4</p>
+            <p class="popup-date__date">5</p>
+            <p class="popup-date__date">6</p>
+            <p class="popup-date__date">7</p>
+          </div>
+          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+            <p class="popup-date__date">8</p>
+            <p class="popup-date__date">9</p>
+            <p class="popup-date__date">10</p>
+            <p class="popup-date__date">11</p>
+            <p class="popup-date__date">12</p>
+            <p class="popup-date__date">13</p>
+            <p class="popup-date__date">14</p>
+          </div>
+          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+            <p class="popup-date__date">15</p>
+            <p class="popup-date__date">16</p>
+            <p class="popup-date__date">17</p>
+            <p class="popup-date__date">18</p>
+            <p class="popup-date__date">19</p>
+            <p class="popup-date__date">20</p>
+            <p class="popup-date__date">21</p>
+          </div>
+          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+            <p class="popup-date__date">22</p>
+            <p class="popup-date__date">23</p>
+            <p class="popup-date__date">24</p>
+            <p class="popup-date__date">25</p>
+            <p class="popup-date__date">26</p>
+            <p class="popup-date__date">27</p>
+            <p class="popup-date__date">28</p>
+          </div>
+          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+            <p class="popup-date__date">29</p>
+            <p class="popup-date__date">30</p>
+            <p class="popup-date__date">31</p>
+          </div>
+          <p class="popup-date__slot">Доступное время на 2 мая</p>
+          <div class="popup-date__times">
+            <button class="popup-date__time popup-date__time_active">
+              14:00
+            </button>
+            <button class="popup-date__time">15:00</button>
+            <button class="popup-date__time">17:00</button>
+            <button class="popup-date__time">19:00</button>
+          </div>
+          <button id="popup-date-confirm-button-1" class="popup-date__confirm">
+            Подтвердить запись
+          </button>
+          <button
+            id="popup-date-confirm-button-2"
+            class="popup-date__confirm popup-date__confirm_hidden"
+          >
+            Подтвердить запись
+          </button>
+        </div>
+      </div>
+      <!-- popup success confirm -->
+      <div class="popup popup-success">
+        <div class="popup-date__content popup-success__content">
+          <div class="symptoms__close popup-date__close">X</div>
+          <h2 class="popup-success__title">
+            Вы записались на приём 12 июня, 12:30 • Четверг
+          </h2>
+          <h3 class="popup-success__subtitle">Рекомендуем прийти за полчаса</h3>
+          <p class="popup-success__address">Тверская, 15</p>
+          <p class="popup-success__clinic">
+            Региональный центр медико-социального сопровождения
+          </p>
+          <p id="popup-success-price" class="popup-success__cost">
+            Приём 1690 ₽
+          </p>
+          <div id="popup-success-line" class="popup-success__line"></div>
+          <p id="popup-success-enter" class="popup-success__enter">
+            Войдите в личный кабинет, чтобы отслеживать лечение
+          </p>
+          <p id="popup-success-description" class="popup-success__description">
+            Отобразим текущие записи и подскажем следующие шаги
+          </p>
+          <button id="popup-success-confirm" class="popup-date__confirm">
+            Создать аккаунт
+          </button>
+          <button
+            id="popup-success-confirm-2"
+            class="popup-date__confirm popup-date__confirm_hidden"
+          >
+            Перейти в личный кабинет
+          </button>
+        </div>
+      </div>
+      <!-- popup записаться  -->
+      <div id="popup-booking" class="popup popup-booking">
+        <div class="popup-date__content popup-booking__content">
+          <div class="symptoms__close popup-booking__close">X</div>
+          <h2 class="popup-booking__title">
+            В какую поликлинику хотите записаться?
+          </h2>
+          <div id="booking-free" class="popup-booking__container">
+            <h3 class="popup-booking__subtitle">
+              Бесплатно по ОМС<span class="popup-booking__subtitle-icon"></span>
+            </h3>
+            <p class="popup-booking__text">
+              Пройдите бесплатное обследование в государственной или частной
+              поликлинике
+            </p>
+            <p class="popup-booking__slot">Ближайший слот 25 ИЮНЯ</p>
+          </div>
+          <div id="booking-pay" class="popup-booking__container">
+            <h3 class="popup-booking__subtitle">
+              Платно<span class="popup-booking__subtitle-icon"></span>
+            </h3>
+            <p class="popup-booking__text">
+              Найдите список частных клиник с платными услугами. Могут быстрее
+              оказать помощь
+            </p>
+            <p class="popup-booking__slot">Ближайший слот завтра</p>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- при нажатии на фильтр болезни открывается следующий блок -->
     <div class="filters__horizont"></div>
@@ -928,714 +2052,6 @@
         <button class="filters__done">Готово</button>
       </div>
     </div>
-    <!-- перед футером появляется этот блок -->
-    <div id="start" class="footer start">
-      <div class="start__icon-up"></div>
-      <div class="start__wrapper">
-        <p class="start__text">
-          4 шага в случае онкологии <br />
-          <span class="start__span">от 10 дней до 1 месяца</span>
-        </p>
-        <button class="start__button">Начать путь</button>
-      </div>
-    </div>
-    <!-- прячем футер при нажатии на первый этап онкологии -->
-    <footer class="footer">
-      <div class="footer__nav">
-        <div class="footer__icon footer__icon-main"></div>
-        <p class="footer__name footer__name_active">Главная</p>
-      </div>
-      <div class="footer__nav">
-        <div class="footer__icon footer__icon-main"></div>
-        <p class="footer__name footer__name_active">Маркетплейс</p>
-      </div>
-      <div class="footer__nav">
-        <div class="footer__icon footer__icon-main"></div>
-        <p class="footer__name footer__name_active">Профиль</p>
-      </div>
-    </footer>
-    <!-- появляется после записи к первому врачу -->
-    <section class="hello">
-      <header class="header">
-        <h1 class="header__title">Платформа помощи</h1>
-        <div class="header__icon-marketplace"></div>
-        <div class="header__icon-burger-menu"></div>
-      </header>
-      <h2 class="hello__hello">Здравствуйте</h2>
-      <div class="hello__field">
-        <div class="health">
-          <div class="health__wrapper-x">
-            <div class="health__icon-heart-bg">
-              <div class="health__icon-heart"></div>
-            </div>
-            <p class="health__name">ЗДОРОВЬЕ</p>
-          </div>
-          <h3 class="health__title">Первичное обследование новообразования</h3>
-          <p class="health__clinic">
-            Региональный центр медико-социального сопровождения
-          </p>
-          <div class="health__line"></div>
-          <p class="health__data">12 апреля, 12:30 • Четверг</p>
-          <p class="health__data">Тверская, 15</p>
-          <p class="health__data">+7 495 607-69-98</p>
-          <img
-            class="health__women"
-            src="./images/image-women-for-health-block.png"
-          />
-          <div class="health__bg"></div>
-        </div>
-        <div class="hello__roadmap">
-          <div class="hello__wrapper">
-            <div class="stages__icon hello__icon"></div>
-            <p class="hello__availible-help">Доступна мат. помощь</p>
-          </div>
-          <h3 class="hello__title">Лечение онкологии</h3>
-          <h4 class="hello__title-gray">от 1 года до 5 лет</h4>
-          <!-- таймлайн -->
-          <!-- таймлайн меняется после второй записи -->
-          <div class="timeline">
-            <div class="timeline__main-line"></div>
-            <div class="timeline__blue-short-line"></div>
-            <div class="timeline__blue-short-line-x"></div>
-            <div class="timeline__gray-short-line-x"></div>
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x-2"
-            ></div>
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x-3"
-            ></div>
-
-            <h4 class="timeline__title">
-              <span class="timeline__title-span timeline__title-span_active"
-                >1</span
-              >
-              Обнаружение <br />
-              возможных признаков
-            </h4>
-            <div class="timeline__step-container timeline__step-container-span">
-              <div
-                class="timeline__step-circle timeline__step-circle_active"
-              ></div>
-              <p class="timeline__step timeline__step_active">
-                Консультация специалиста <br /><span class="timeline__step"
-                  >12 июня</span
-                >
-              </p>
-            </div>
-            <div class="timeline__step-container timeline__step-2">
-              <div class="timeline__step-circle"></div>
-              <p class="timeline__step">Психологическая помощь</p>
-            </div>
-            <h4 class="timeline__title">
-              <span class="timeline__title-span">2</span>
-              Обследования
-            </h4>
-            <div class="timeline__step-container timeline__step-3">
-              <div class="timeline__step-circle"></div>
-              <p class="timeline__step">Консультация специалиста</p>
-            </div>
-            <div class="timeline__step-container timeline__step-4">
-              <div class="timeline__step-circle"></div>
-              <p class="timeline__step">Психологическая помощь</p>
-            </div>
-            <h4 class="timeline__title">
-              <span class="timeline__title-span">3</span>
-
-              Лечение<span class="timeline__title-icon"></span>
-            </h4>
-            <h4 class="timeline__title">
-              <span class="timeline__title-span">4</span>
-
-              Реабилитация<span class="timeline__title-icon"></span>
-            </h4>
-          </div>
-          <!-- второй таймлайн -->
-          <!-- <div class="timeline">
-            <div class="timeline__main-line timeline__main-line-2"></div>
-            <div class="timeline__main-line timeline__main-line-3"></div>
-            <div class="timeline__blue-short-line"></div>
-            <div
-              class="timeline__blue-short-line-x timeline__blue-short-line-x-gray"
-            ></div>
-            <div
-              class="timeline__blue-short-line-x timeline__blue-short-line-x-2"
-            ></div>
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-1"
-            ></div>
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x-2 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-2"
-            ></div>
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x-3 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-3"
-            ></div>
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x-4 timeline__gray-short-line-x-solid timeline__gray-short-line-x-solid-4"
-            ></div>
-
-            <div
-              class="timeline__gray-short-line-x timeline__gray-short-line-x-5"
-            ></div>
-
-            <h4 class="timeline__title">
-              <span class="timeline__title-span timeline__title-span_active"
-                >1</span
-              >
-              Обнаружение <br />
-              возможных признаков
-            </h4>
-            <div class="timeline__step-container timeline__step-container-span">
-              <div
-                class="timeline__step-circle timeline__step-circle_check"
-              ></div>
-              <p class="timeline__step timeline__step_done">
-                Консультация специалиста <br /><span class="timeline__step"
-                  >12 июня</span
-                >
-              </p>
-            </div>
-            <div
-              class="timeline__step-container timeline__step-2 timeline__step-container-span timeline__step-container-span-2"
-            >
-              <div
-                class="timeline__step-circle timeline__step-circle_check"
-              ></div>
-              <p class="timeline__step timeline__step_done">
-                Психологическая помощь<br /><span class="timeline__step"
-                  >12 июня</span
-                >
-              </p>
-            </div>
-            <h4 class="timeline__title">
-              <span class="timeline__title-span timeline__title-span_active"
-                >2</span
-              >
-              Обследования
-            </h4>
-            <div class="timeline__step-container timeline__step-container-span">
-              <div
-                class="timeline__step-circle timeline__step-circle_check"
-              ></div>
-              <p class="timeline__step timeline__step_done">
-                Консультация специалиста <br /><span class="timeline__step"
-                  >12 июня</span
-                >
-              </p>
-            </div>
-            <div class="timeline__step-container timeline__step-container-span">
-              <div
-                class="timeline__step-circle timeline__step-circle_check"
-              ></div>
-              <p class="timeline__step timeline__step_done">
-                Консультация специалиста <br /><span class="timeline__step"
-                  >12 июня</span
-                >
-              </p>
-            </div>
-            <div class="timeline__step-container timeline__step-container-span">
-              <div
-                class="timeline__step-circle timeline__step-circle_check"
-              ></div>
-              <p class="timeline__step timeline__step_done">
-                Консультация специалиста <br /><span class="timeline__step"
-                  >12 июня</span
-                >
-              </p>
-            </div>
-            <h4 class="timeline__title">
-              <span class="timeline__title-span timeline__title-span_active"
-                >3</span
-              >
-              Лечение<span class="timeline__title-icon"></span>
-            </h4>
-            <div
-              class="timeline__step-container timeline__step-container-span-3 timeline__step-container-span"
-            >
-              <div
-                class="timeline__step-circle timeline__step-circle_active"
-              ></div>
-              <p
-                class="timeline__step timeline__step_active timeline__step_active-2"
-              >
-                Приём ко врачу для бесплатного получения лекарств <br /><span
-                  class="timeline__step"
-                  >24 июля</span
-                >
-              </p>
-            </div>
-            <div class="timeline__step-container timeline__step-3">
-              <div class="timeline__step-circle"></div>
-              <p class="timeline__step">Консультация специалиста</p>
-            </div>
-            <h4 class="timeline__title">
-              <span class="timeline__title-span">4</span>
-
-              Реабилитация<span class="timeline__title-icon"></span>
-            </h4>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- появляется при нажатии на "Записаться на осмотр" -->
-    <section class="appointment">
-      <div class="symptoms__close">X</div>
-      <h3 class="services__title">Центры обследования в</h3>
-      <div class="services__select">
-        <p class="services__city">Екатеринбурге</p>
-        <div class="services__icon-select"></div>
-      </div>
-      <div id="instr-select" class="instructions__wrapper-x stages_visible">
-        <div class="instructions__select">
-          <p class="instructions__select-text">Онкология</p>
-          <div class="instructions__icon-down"></div>
-        </div>
-        <div class="instructions__icon-filter"></div>
-      </div>
-      <!-- 1 -->
-      <div class="clinic">
-        <img src="./images/image-hand.png" class="clinic__image" />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            1300
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            4.9
-          </button>
-          <button class="instruction__button clinic__button">Частная</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться • 1230 ₽</button>
-      </div>
-      <!-- 2 -->
-      <div class="clinic">
-        <img
-          src="./images/image-red-chess.png"
-          class="clinic__image clinic__image-red"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            303
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            4.9
-          </button>
-          <button class="instruction__button clinic__button">Частная</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться • 1230 ₽</button>
-      </div>
-      <!-- 3 -->
-      <div class="clinic">
-        <img
-          src="./images/image-man-schema-clinic.png"
-          class="clinic__image clinic__image-man"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            253
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            4
-          </button>
-          <button class="instruction__button clinic__button">Госклиника</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться</button>
-      </div>
-      <!-- 4 -->
-      <div class="clinic">
-        <img
-          src="./images/image-last-clinic.png"
-          class="clinic__image clinic__image-last"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            219
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            3.8
-          </button>
-          <button class="instruction__button clinic__button">Частная</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться • 1230 ₽</button>
-      </div>
-      <!-- 5 -->
-      <div class="clinic">
-        <img
-          src="./images/image-clinic-5.png"
-          class="clinic__image clinic__image-5"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            1300
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            4.9
-          </button>
-          <button class="instruction__button clinic__button">Госклиника</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться • 1230 ₽</button>
-      </div>
-      <!-- 6 -->
-      <div class="clinic">
-        <img
-          src="./images/image-clinic-6.png"
-          class="clinic__image clinic__image-6"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            303
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            4.9
-          </button>
-          <button class="instruction__button clinic__button">Частная</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться • 1230 ₽</button>
-      </div>
-      <!-- 7 -->
-      <div class="clinic">
-        <img
-          src="./images/image-clinic-7.png"
-          class="clinic__image clinic__image-7"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            253
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            4
-          </button>
-          <button class="instruction__button clinic__button">Госклиника</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться</button>
-      </div>
-      <!-- 8 -->
-      <div class="clinic">
-        <img
-          src="./images/image-clinic-8.png"
-          class="clinic__image clinic__image-8"
-        />
-        <div class="instruction__wrapper clinic__wrapper">
-          <button class="instruction__button clinic__button">
-            <div class="instruction__icon-message clinic__icon-comments"></div>
-            219
-          </button>
-          <button
-            class="instruction__button clinic__button clinic__button_active"
-          >
-            <div class="instruction__icon-like clinic__icon-forward"></div>
-            3.8
-          </button>
-          <button class="instruction__button clinic__button">Частная</button>
-        </div>
-        <h3 class="clinic__title">Первичное обследование новообразования</h3>
-        <p class="clinic__text">
-          Екатеринбургский региональный центр социального сопровождения
-        </p>
-        <div class="clinic__wrapper-x">
-          <p class="clinic__street">Ул. Ленина, 15</p>
-          <div class="clinic__map"></div>
-        </div>
-        <button class="clinic__order">Записаться • 1230 ₽</button>
-      </div>
-    </section>
-    <!-- popup choose date -->
-    <div class="popup popup-date">
-      <div class="popup-date__content">
-        <div class="symptoms__close popup-date__close">X</div>
-        <div class="popup-date__container-month">
-          <div class="popup-date__arrow-left"></div>
-          <p class="popup-date__month">Май</p>
-          <div class="popup-date__arrow-right"></div>
-        </div>
-        <div class="popup-date__wrapper-week">
-          <p class="popup-date__day">Пн</p>
-          <p class="popup-date__day">Вт</p>
-          <p class="popup-date__day">Ср</p>
-          <p class="popup-date__day">Чт</p>
-          <p class="popup-date__day">Пт</p>
-          <p class="popup-date__day">Сб</p>
-          <p class="popup-date__day">Вс</p>
-        </div>
-        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-          <p class="popup-date__date">1</p>
-          <p class="popup-date__date popup-date__date_active">2</p>
-          <p class="popup-date__date popup-date__date_availible">3</p>
-          <p class="popup-date__date">4</p>
-          <p class="popup-date__date">5</p>
-          <p class="popup-date__date">6</p>
-          <p class="popup-date__date">7</p>
-        </div>
-        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-          <p class="popup-date__date">8</p>
-          <p class="popup-date__date">9</p>
-          <p class="popup-date__date">10</p>
-          <p class="popup-date__date">11</p>
-          <p class="popup-date__date">12</p>
-          <p class="popup-date__date">13</p>
-          <p class="popup-date__date">14</p>
-        </div>
-        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-          <p class="popup-date__date">15</p>
-          <p class="popup-date__date">16</p>
-          <p class="popup-date__date">17</p>
-          <p class="popup-date__date">18</p>
-          <p class="popup-date__date">19</p>
-          <p class="popup-date__date">20</p>
-          <p class="popup-date__date">21</p>
-        </div>
-        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-          <p class="popup-date__date">22</p>
-          <p class="popup-date__date">23</p>
-          <p class="popup-date__date">24</p>
-          <p class="popup-date__date">25</p>
-          <p class="popup-date__date">26</p>
-          <p class="popup-date__date">27</p>
-          <p class="popup-date__date">28</p>
-        </div>
-        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-          <p class="popup-date__date">29</p>
-          <p class="popup-date__date">30</p>
-          <p class="popup-date__date">31</p>
-        </div>
-        <p class="popup-date__slot">Доступное время на 2 мая</p>
-        <div class="popup-date__times">
-          <button class="popup-date__time popup-date__time_active">
-            14:00
-          </button>
-          <button class="popup-date__time">15:00</button>
-          <button class="popup-date__time">17:00</button>
-          <button class="popup-date__time">19:00</button>
-        </div>
-        <button class="popup-date__confirm">Подтвердить запись</button>
-      </div>
-    </div>
-    <!-- popup success confirm -->
-    <div class="popup popup-success">
-      <div class="popup-date__content popup-success__content">
-        <!-- при втором типе конферма скрывается этот элемент: -->
-        <div class="symptoms__close popup-date__close">X</div>
-        <h2 class="popup-success__title">
-          Вы записались на приём 12 июня, 12:30 • Четверг
-        </h2>
-        <h3 class="popup-success__subtitle">Рекомендуем прийти за полчаса</h3>
-        <p class="popup-success__address">Тверская, 15</p>
-        <p class="popup-success__clinic">
-          Региональный центр медико-социального сопровождения
-        </p>
-        <p class="popup-success__cost">Приём 1690 ₽</p>
-        <!-- при втором типе конферма скрывается этот элемент: -->
-        <div class="popup-success__line"></div>
-        <!-- при втором типе конферма скрывается этот элемент: -->
-        <p class="popup-success__enter">
-          Войдите в личный кабинет, чтобы отслеживать лечение
-        </p>
-        <!-- при втором типе конферма скрывается этот элемент: -->
-        <p class="popup-success__description">
-          Отобразим текущие записи и подскажем следующие шаги
-        </p>
-        <!-- при втором типе конферма текст меняется на В личный кабинет -->
-        <button class="popup-date__confirm">Создать аккаунт</button>
-      </div>
-    </div>
-    <!-- popup money help -->
-    <div class="popup popup-help">
-      <div class="popup-date__content popup-help__content">
-        <div class="symptoms">
-          <div class="symptoms__close">X</div>
-          <h2 class="symptoms__title popup-help__title">
-            Материальная помощь и льготы от государства
-          </h2>
-          <p class="symptoms__detail">Стадия онкологии</p>
-          <div class="symptoms__buttons">
-            <button class="symptoms__button popup-help__button">Первая</button>
-            <button
-              class="symptoms__button popup-help__button_active popup-help__button"
-            >
-              Вторая
-            </button>
-            <button class="symptoms__button popup-help__button">Третья</button>
-            <button class="symptoms__button popup-help__button">
-              Четвертая
-            </button>
-          </div>
-          <p class="symptoms__detail">Тип помощи</p>
-          <div class="symptoms__buttons popup-help__buttons">
-            <button class="symptoms__button popup-help__button">
-              Бесплатное мед. обслуживание
-            </button>
-            <button
-              class="symptoms__button popup-help__button_active popup-help__button"
-            >
-              Бесплатные лекарства
-            </button>
-          </div>
-          <h5 class="symptoms__what-to-do popup-help__what-to-do">
-            Бесплатные лекарства
-          </h5>
-          <p class="popup-help__text">
-            Лекарства, необходимые для лечения онкологического заболевания,
-            могут предоставляться пациентам бесплатно или по льготным ценам
-            через систему государственных аптечных учреждений.
-          </p>
-          <button class="symptoms__order">Записаться на осмотр</button>
-          <button class="symptoms__order symptoms__get-plan">
-            Скачать план действий
-          </button>
-          <div class="popup-help__container">
-            <div class="popup-help__option">
-              <h3 class="popup-help__subtitle">
-                Получение бесплатных <br />лекарств
-              </h3>
-              <p class="popup-help__description">
-                Перед походом ко врачу-онкологу для получения рецепта, не
-                забудьте взять документы
-              </p>
-              <p class="popup-help__document">
-                Необходимые документы
-                <span class="popup-help__document-span"></span>
-              </p>
-            </div>
-            <div class="popup-help__option">
-              <h3 class="popup-help__subtitle">
-                Аптеки, где можно получить <br />лекарства
-              </h3>
-              <p class="popup-help__description">
-                В г.Архангельск бесплатные лекарства по рецепту доступны в
-                аптечных пунктах выдачи льготных лекарств
-              </p>
-              <p class="popup-help__document">
-                Адреса пунктов выдачи
-                <span class="popup-help__document-span"></span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="start" class="footer start popup-help-start">
-          <div class="start__icon-up"></div>
-          <div class="start__wrapper">
-            <p class="start__text">
-              Получение материальной <br />
-              помощи и льгот при онкологии <br />
-              <span class="start__span"> от 1 до 5 дней</span>
-            </p>
-            <button class="start__button">Записаться</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- popup записаться  -->
-    <div class="popup popup-booking">
-      <div class="popup-date__content popup-booking__content">
-        <div class="symptoms__close popup-booking__close">X</div>
-        <h2 class="popup-booking__title">
-          В какую поликлинику хотите записаться?
-        </h2>
-        <div class="popup-booking__container">
-          <h3 class="popup-booking__subtitle">
-            Бесплатно по ОМС<span class="popup-booking__subtitle-icon"></span>
-          </h3>
-          <p class="popup-booking__text">
-            Пройдите бесплатное обследование в государственной или частной
-            поликлинике
-          </p>
-          <p class="popup-booking__slot">Ближайший слот 25 ИЮНЯ</p>
-        </div>
-        <div class="popup-booking__container">
-          <h3 class="popup-booking__subtitle">
-            Платно<span class="popup-booking__subtitle-icon"></span>
-          </h3>
-          <p class="popup-booking__text">
-            Найдите список частных клиник с платными услугами. Могут быстрее
-            оказать помощь
-          </p>
-          <p class="popup-booking__slot">Ближайший слот завтра</p>
-        </div>
-      </div>
-    </div>
     <!-- popup gosuslugi -->
     <div class="popup popup-gosuslugi">
       <div class="popup-date__content popup-gosuslugi__content">
@@ -1657,6 +2073,43 @@
         </p>
       </div>
     </div>
+    <!-- перед футером появляется этот блок -->
+    <div id="start" class="footer start">
+      <div class="start__icon-up"></div>
+      <div class="start__wrapper">
+        <p class="start__text">
+          4 шага в случае онкологии <br />
+          <span class="start__span">от 10 дней до 1 месяца</span>
+        </p>
+        <button class="start__button">Начать путь</button>
+      </div>
+    </div>
+    <!-- перед футером появляется этот блок -->
+    <div id="start-2" class="footer start start-2">
+      <div class="start__icon-up"></div>
+      <div class="start__wrapper">
+        <p class="start__text">
+          Получение материальной помощи и льгот при онкологии<br />
+          <span class="start__span">от 1 до 5 дней</span>
+        </p>
+        <button class="start__button">Записаться</button>
+      </div>
+    </div>
+    <!-- прячем футер при нажатии на первый этап онкологии -->
+    <footer id="footer" class="footer">
+      <div class="footer__nav">
+        <div class="footer__icon footer__icon-main"></div>
+        <p class="footer__name footer__name_active">Главная</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__icon footer__icon-main"></div>
+        <p class="footer__name footer__name_active">Маркетплейс</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__icon footer__icon-main"></div>
+        <p class="footer__name footer__name_active">Профиль</p>
+      </div>
+    </footer>
   </div>
   <script type="module" src="./pages/index.js"></script>
 </body>

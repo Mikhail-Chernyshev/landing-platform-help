@@ -5,6 +5,10 @@
   width: 20px;
   height: 20px;
 }
+.popup-booking__content {
+  position: absolute;
+  top: 0;
+}
 .popup-booking__title {
   margin: 29px 56px 40px 16px;
   font-weight: 500;

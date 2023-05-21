@@ -2,7 +2,33 @@
   margin-bottom: -9px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  bottom: 88px;
+  z-index: 19;
+  width: 375px;
   display: none;
+}
+.start-2 {
+  display: none;
+  bottom: 0;
+  height: 95px;
+}
+.start-2 .start__text {
+  margin-top: 0;
+}
+.start_visible {
+  display: flex;
+}
+.start_first-stage {
+  bottom: 0;
+}
+.start_fixed {
+  /* position: fixed;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0; */
 }
 .start__icon-up {
   width: 24px;

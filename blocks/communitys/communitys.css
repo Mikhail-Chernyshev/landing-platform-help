@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
 }
+.communitys_unvisible {
+  display: none;
+}
 .communitys__title {
   font-weight: 500;
   font-size: 26px;

@@ -3,6 +3,13 @@
   flex-direction: column;
   background-color: #8859db;
   width: 375px;
+  display: none;
+}
+.symptoms-second {
+  /* position: relative; */
+}
+.symptoms_visible {
+  display: flex;
 }
 .symptoms__close {
   width: 30px;
@@ -112,5 +119,5 @@
 }
 .symptoms__get-plan {
   background: rgba(255, 255, 255, 0.16);
-  margin-bottom: 44px;
+  margin-bottom: 64px;
 }

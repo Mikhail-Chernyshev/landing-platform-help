@@ -5,6 +5,9 @@
   margin: 0 auto;
   position: relative;
 }
+.timeline_hidden{
+  display: none;
+}
 .timeline__main-line {
   height: 438px;
   width: 3px;
