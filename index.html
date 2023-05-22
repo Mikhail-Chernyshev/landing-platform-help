@@ -360,7 +360,9 @@
         </div>
       </section>
       <!-- появляется при нажатии на первый этап -->
-      <div id="symptomsAfterClickFirstStage" class="symptoms">
+      <div id="symptomsAfterClickFirstStage" class="symptoms symptoms-first">
+        <div class="symptoms__bg"></div>
+        <div class="symptoms__bg-2"></div>
         <div class="symptoms__close">X</div>
         <h2 class="symptoms__title">
           Обнаружение возможных признаков онкологии
@@ -397,86 +399,7 @@
           Скачать план действий
         </button>
       </div>
-      <!-- section else help -->
-      <div id="extra-help" class="stages__extra-help">
-        <h2 id="extra-help-title" class="stages__title">
-          Дополнительная помощь
-        </h2>
-        <div id="stage-wrapper-x" class="stages__wrapper-x">
-          <div id="stages-help-1" class="stages__help">
-            <div class="stages__wrapper">
-              <h3 id="extra-help-subtitle-1" class="stages__subtitle">
-                Материальная помощь <br />
-                и льготы бесплатные лекарства
-              </h3>
-              <div class="stages__icon"></div>
-            </div>
-            <p id="extra-help-text-1" class="stages__text">
-              Услуги, которые можете получить за счёт Государства, фондов и НКО
-            </p>
-            <div class="community__link stage__link stage__link-second">
-              <p id="extra-help-get" class="community__social stages__social">
-                Выбрать
-              </p>
-              <div class="community__icon-arrow stages__icon-arrow"></div>
-            </div>
-          </div>
-          <div class="stages__help">
-            <div class="stages__wrapper">
-              <h3 id="extra-help-subtitle-2" class="stages__subtitle">
-                Нематериальная <br />
-                помощь
-              </h3>
-              <div class="stages__icon"></div>
-            </div>
-            <p id="extra-help-text-2" class="stages__text">
-              Консультации НКО и специалистов
-            </p>
-            <div class="community__link stage__link stage__link-second">
-              <p id="extra-help-get-2" class="community__social stages__social">
-                Выбрать
-              </p>
-              <div class="community__icon-arrow stages__icon-arrow"></div>
-            </div>
-          </div>
-          <div class="stages__help">
-            <div class="stages__wrapper">
-              <h3 id="extra-help-subtitle-3" class="stages__subtitle">
-                Юридическая <br />
-                помощь
-              </h3>
-              <div class="stages__icon"></div>
-            </div>
-            <p id="extra-help-text-3" class="stages__text">
-              Помощь в юридических вопросах от специалистов
-            </p>
-            <div class="community__link stage__link stage__link-second">
-              <!-- при нажатии на первый этап меняется текст на Получить услугу -->
-              <p class="community__social stages__social">Выбрать</p>
-              <div class="community__icon-arrow stages__icon-arrow"></div>
-            </div>
-          </div>
-          <div class="stages__help">
-            <div class="stages__wrapper">
-              <!-- при нажатии на первый этап меняется текст на Получайте психологическую поддержку -->
-              <h3 id="extra-help-subtitle-4" class="stages__subtitle">
-                Психологическая <br />
-                помощь
-              </h3>
-              <div class="stages__icon"></div>
-            </div>
-            <!-- при нажатии на первый этап меняется текст на Диагноз онкологического заболевания может быть трудным и вызвать эмоциональное напряжение, поэтому важно получить своевременную психологическую поддержку -->
-            <p id="extra-help-text-4" class="stages__text">
-              Моральная поддержка от профессионалов
-            </p>
-            <div class="community__link stage__link stage__link-second">
-              <!-- при нажатии на первый этап меняется текст на Получить услугу -->
-              <p class="community__social stages__social">Выбрать</p>
-              <div class="community__icon-arrow stages__icon-arrow"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <section id="cases" class="cases">
         <!-- cancer -->
         <div class="case">
@@ -588,8 +511,92 @@
             </div>
           </div>
         </div>
+        <!-- section else help -->
+        <div id="extra-help" class="stages__extra-help">
+          <h2 id="extra-help-title" class="stages__title">
+            Дополнительная помощь
+          </h2>
+          <div id="stage-wrapper-x" class="stages__wrapper-x">
+            <div id="stages-help-1" class="stages__help">
+              <div class="stages__wrapper">
+                <h3 id="extra-help-subtitle-1" class="stages__subtitle">
+                  Материальная помощь <br />
+                  и льготы
+                </h3>
+                <div class="stages__icon"></div>
+              </div>
+              <p id="extra-help-text-1" class="stages__text">
+                Услуги, которые можете получить за счёт Государства, фондов и
+                НКО
+              </p>
+              <div class="community__link stage__link stage__link-second">
+                <p id="extra-help-get" class="community__social stages__social">
+                  Выбрать
+                </p>
+                <div class="community__icon-arrow stages__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="stages__help">
+              <div class="stages__wrapper">
+                <h3 id="extra-help-subtitle-2" class="stages__subtitle">
+                  Нематериальная <br />
+                  помощь
+                </h3>
+                <div class="stages__icon"></div>
+              </div>
+              <p id="extra-help-text-2" class="stages__text">
+                Консультации НКО и специалистов
+              </p>
+              <div class="community__link stage__link stage__link-second">
+                <p
+                  id="extra-help-get-2"
+                  class="community__social stages__social"
+                >
+                  Выбрать
+                </p>
+                <div class="community__icon-arrow stages__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="stages__help">
+              <div class="stages__wrapper">
+                <h3 id="extra-help-subtitle-3" class="stages__subtitle">
+                  Юридическая <br />
+                  помощь
+                </h3>
+                <div class="stages__icon"></div>
+              </div>
+              <p id="extra-help-text-3" class="stages__text">
+                Помощь в юридических вопросах от специалистов
+              </p>
+              <div class="community__link stage__link stage__link-second">
+                <!-- при нажатии на первый этап меняется текст на Получить услугу -->
+                <p class="community__social stages__social">Выбрать</p>
+                <div class="community__icon-arrow stages__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="stages__help">
+              <div class="stages__wrapper">
+                <!-- при нажатии на первый этап меняется текст на Получайте психологическую поддержку -->
+                <h3 id="extra-help-subtitle-4" class="stages__subtitle">
+                  Психологическая <br />
+                  помощь
+                </h3>
+                <div class="stages__icon"></div>
+              </div>
+              <!-- при нажатии на первый этап меняется текст на Диагноз онкологического заболевания может быть трудным и вызвать эмоциональное напряжение, поэтому важно получить своевременную психологическую поддержку -->
+              <p id="extra-help-text-4" class="stages__text">
+                Моральная поддержка от профессионалов
+              </p>
+              <div class="community__link stage__link stage__link-second">
+                <!-- при нажатии на первый этап меняется текст на Получить услугу -->
+                <p class="community__social stages__social">Выбрать</p>
+                <div class="community__icon-arrow stages__icon-arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- bulling -->
-        <div class="case">
+        <div id="bulling" class="case">
           <div class="case__wrapper-horizont">
             <div class="case__wrapper-vertical">
               <h3 class="case__title">Буллинг</h3>
@@ -617,6 +624,137 @@
               <div class="case__range"></div>
               <div class="case__range"></div>
               <div class="case__range"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bulling-content -->
+        <div class="bulling-content">
+          <p class="case__text case__text_experts case__text-bulling">
+            45 экспертов
+          </p>
+          <div class="bulling-content__wrapper">
+            <button class="services__button bulling-content__role">
+              Жертва буллинга
+            </button>
+            <button
+              class="services__button bulling-content__role bulling-content__role_active"
+            >
+              Родитель жертвы
+            </button>
+          </div>
+          <div class="bulling-content__wrapper-cases">
+            <div class="bulling-content__case">
+              <h2 class="stage__title bulling-content__title">
+                Физический буллинг
+              </h2>
+              <p class="stage__text bulling-content__text">
+                Узнайте конкретные шаги, которые помогут прекратить физическую
+                травлю вашего ребенка
+              </p>
+              <div
+                class="community__link stage__link stage__link-second bulling-content__link"
+              >
+                <p class="community__social stage__social">Выбрать ситуацию</p>
+                <div class="community__icon-arrow stage__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="bulling-content__case">
+              <h2 class="stage__title bulling-content__title">
+                Психологический и вербальный буллинг
+              </h2>
+              <p class="stage__text bulling-content__text">
+                Как обнаружить признаки того, что вашего ребенка унижают в школе
+              </p>
+              <div
+                class="community__link stage__link stage__link-second bulling-content__link"
+              >
+                <p class="community__social stage__social">Выбрать ситуацию</p>
+                <div class="community__icon-arrow stage__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="bulling-content__case">
+              <h2 class="stage__title bulling-content__title">Кибербуллинг</h2>
+              <p class="stage__text bulling-content__text">
+                Узнайте, что можно сделать, когда вашего ребёнка травят в
+                интернете
+              </p>
+              <div
+                class="community__link stage__link stage__link-second bulling-content__link"
+              >
+                <p class="community__social stage__social">Выбрать ситуацию</p>
+                <div class="community__icon-arrow stage__icon-arrow"></div>
+              </div>
+            </div>
+            <div class="bulling-content__case">
+              <h2 class="stage__title bulling-content__title">
+                Домашнее насилие
+              </h2>
+              <p class="stage__text bulling-content__text">
+                Как помочь своему ребёнку, если другой член семьи применяет к
+                нему насилие
+              </p>
+              <div
+                class="community__link stage__link stage__link-second bulling-content__link"
+              >
+                <p class="community__social stage__social">Выбрать ситуацию</p>
+                <div class="community__icon-arrow stage__icon-arrow"></div>
+              </div>
+            </div>
+          </div>
+          <!-- extra bulling -->
+          <div
+            id="extra-help"
+            class="stages__extra-help bulling-content__extra-help"
+          >
+            <h2 id="extra-help-title" class="stages__title">
+              Дополнительная помощь
+            </h2>
+            <div
+              id="stage-wrapper-x"
+              class="stages__wrapper-x bulling-content__wrapper-help"
+            >
+              <div id="stages-help-1" class="stages__help">
+                <div class="stages__wrapper">
+                  <h3 id="extra-help-subtitle-1" class="stages__subtitle">
+                    Психологическая помощь
+                  </h3>
+                  <div class="stages__icon"></div>
+                </div>
+                <p id="extra-help-text-1" class="stages__text">
+                  Моральная поддержка профессионалов
+                </p>
+                <div class="community__link stage__link stage__link-second">
+                  <p
+                    id="extra-help-get"
+                    class="community__social stages__social"
+                  >
+                    Выбрать
+                  </p>
+                  <div class="community__icon-arrow stages__icon-arrow"></div>
+                </div>
+              </div>
+              <div class="stages__help">
+                <div class="stages__wrapper">
+                  <h3 id="extra-help-subtitle-2" class="stages__subtitle">
+                    Юридическая <br />
+                    помощь
+                  </h3>
+                  <div class="stages__icon"></div>
+                </div>
+                <p id="extra-help-text-2" class="stages__text">
+                  Помощь от специалистов
+                </p>
+                <div class="community__link stage__link stage__link-second">
+                  <p
+                    id="extra-help-get-2"
+                    class="community__social stages__social"
+                  >
+                    Выбрать
+                  </p>
+                  <div class="community__icon-arrow stages__icon-arrow"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -821,6 +959,7 @@
           </div>
         </div>
       </section>
+
       <!-- при появлении онкологии этот блог закрывается -->
       <section id="services" class="services">
         <h3 class="services__title">Популярные услуги в</h3>
@@ -903,7 +1042,10 @@
             <p class="instructions__select-text">Онкология</p>
             <div class="instructions__icon-down"></div>
           </div>
-          <div class="instructions__icon-filter"></div>
+          <div
+            id="instructions__icon-filter"
+            class="instructions__icon-filter"
+          ></div>
         </div>
         <!-- zamena -->
         <div
@@ -1254,7 +1396,7 @@
               id="commun-service-5"
               class="community__service community__service-dzen"
             >
-              Психолог онлайн Психологическая помощь
+              Психолог онлайн
             </h4>
             <div class="community__link">
               <p class="community__social community__social-dzen">Вконтакте</p>
@@ -1934,6 +2076,12 @@
           >
             Подтвердить запись
           </button>
+          <button
+            id="popup-date-confirm-button-3"
+            class="popup-date__confirm popup-date__confirm_hidden"
+          >
+            Подтвердить запись
+          </button>
         </div>
       </div>
       <!-- popup success confirm -->
@@ -2000,13 +2148,15 @@
       </div>
     </main>
     <!-- при нажатии на фильтр болезни открывается следующий блок -->
-    <div class="filters__horizont"></div>
-    <div class="filters">
+    <!-- <div id="filters" class="popup popup-filters"> -->
+    <!-- <div class="popup-content popup-content__filters"> -->
+    <div id="filters-block" class="filters">
+      <div class="filters__horizont"></div>
       <h3 class="filters__title">Фильтры</h3>
       <div class="filters__types">
         <p class="filters__types-title">Тип услуг</p>
         <div class="filters__type-container">
-          <div class="filters__type-checkbox"></div>
+          <div class="filters__type-checkbox">✓</div>
           <p class="filters__type-name">Обследования</p>
         </div>
         <div class="filters__type-container">
@@ -2049,9 +2199,11 @@
         <button class="services__button filters__button">Частная</button>
       </div>
       <div class="filters__footer">
-        <button class="filters__done">Готово</button>
+        <button id="filters__done" class="filters__done">Готово</button>
       </div>
     </div>
+    <!-- </div> -->
+    <!-- </div> -->
     <!-- popup gosuslugi -->
     <div class="popup popup-gosuslugi">
       <div class="popup-date__content popup-gosuslugi__content">

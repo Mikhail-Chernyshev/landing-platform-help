@@ -6,6 +6,9 @@
   border-radius: 12px;
   position: relative;
 }
+.stage:hover {
+  cursor: pointer;
+}
 .stage-fourth {
   height: 310px;
 }
@@ -92,5 +95,4 @@
   background-repeat: no-repeat;
   z-index: 2;
   opacity: 0.5;
-
 }

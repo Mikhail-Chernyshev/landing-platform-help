@@ -1,0 +1,48 @@
+.bulling-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 0 0 0;
+  display: none;
+}
+.bulling-content .bulling-content__wrapper {
+  display: flex;
+  margin: 0 auto 16px;
+}
+.bulling-content__wrapper-cases {
+  display: flex;
+  overflow: scroll;
+  margin: 0 0 20px 16px;
+  gap: 10px;
+}
+.bulling-content__role {
+  background: #f8f8f8;
+}
+.bulling-content__role_active {
+  background-color: #147af1;
+  color: white;
+}
+.bulling-content__title {
+  width: 200px;
+  margin-bottom: 34px !important;
+}
+.bulling-content__case {
+  background: #f8f8f8;
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.bulling-content__link {
+  margin: 20px 0 20px 16px;
+  width: 200px !important;
+  max-width: 230px !important;
+}
+.bulling-content__extra-help {
+  display: flex !important;
+}
+.bulling-content__wrapper-help {
+  overflow: hidden !important;
+}

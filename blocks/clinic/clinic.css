@@ -7,6 +7,12 @@
   background-color: #ffffff;
   border-radius: 16px;
 }
+.clinic:hover {
+  box-shadow: inset -15px 2px 55px rgba(0, 128, 255, 0.3);
+}
+.clinic:hover > .clinic__text {
+  margin-top: 5px;
+}
 .clinic__icon-comments {
   background-image: url('../../images/Icon-support-teams.svg');
   margin-right: 4px;
@@ -81,7 +87,7 @@
   letter-spacing: -0.954272px;
 }
 .clinic__text {
-  margin: 0 36px 10px;
+  margin: 0 33px 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -114,4 +120,7 @@
   border-radius: 10px;
   color: #ffffff;
   border: none;
+}
+.clinic__order:hover {
+  cursor: pointer;
 }

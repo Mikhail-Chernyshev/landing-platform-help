@@ -27,6 +27,11 @@
   border: 2px solid #57a4ff;
   border-radius: 12px;
 }
+.stages__help:hover h3 {
+  color: #147af1;
+  transform: translate(-20px, 0);
+  transition: all 0.2s ease-in-out;
+}
 .stages__help:last-child {
   margin-left: 0;
 }
@@ -56,7 +61,7 @@
 .stages__text {
   margin: 0 12px 0px;
   font-weight: 400;
-  max-width: 260px;
+  width: 260px;
   font-size: 13.9155px;
   line-height: 120%;
   color: #0f1d4b;

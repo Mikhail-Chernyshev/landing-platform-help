@@ -61,13 +61,17 @@ const popupChooseDateConfirmElement = document.getElementById(
   'popup-date-confirm-button-1'
 );
 const popupChooseDateConfirmSecondElement = document.getElementById(
-  'popup-date-confirm-button-1'
+  'popup-date-confirm-button-2'
+);
+const popupChooseDateConfirmThirdElement = document.getElementById(
+  'popup-date-confirm-button-3'
 );
 const popupSuccess = document.querySelector('.popup-success');
 const popupSuccessConfirm = document.getElementById('popup-success-confirm');
 const popupSuccessConfirmSecond = document.getElementById(
   'popup-success-confirm-2'
 );
+const popupFiltersElement = document.getElementById('filters');
 const popupBooking = document.getElementById('popup-booking');
 const popupGosuslugi = document.querySelector('.popup-gosuslugi');
 const helloBlock = document.getElementById('hello');
@@ -87,14 +91,24 @@ const descriptionPopupSuccessElement = document.getElementById(
 ); //убрать
 const timelineFirst = document.getElementById('timeline-1');
 const timelineSecond = document.getElementById('timeline-2');
+const instructionsFilterElement = document.getElementById(
+  'instructions__icon-filter'
+);
+const filtersDoneButton = document.getElementById('filters__done');
+const filtersContainer = document.getElementById('filters-block');
+const filtersCheckboxElements = document.querySelectorAll(
+  '.filters__type-checkbox'
+);
+const clinicElements = document.getElementById('clinic');
 
-console.log(firstStageBlock);
-
+console.log(extraHelpBlock);
+//онкология  клик
 cancerContainer.addEventListener('click', () => {
   stagesSection.classList.add('stages_visible');
   startContainer.classList.add('start_visible');
   clinicsSection.classList.add('clinics_visible');
   instrSelectElement.classList.add('stages_visible');
+  extraHelpBlock.classList.add('symptoms_visible');
   listSection.classList.add('list_unvisible');
   instrSubtitleElement.classList.add('list_unvisible');
   servicesSection.classList.add('list_unvisible');
@@ -105,8 +119,30 @@ cancerContainer.addEventListener('click', () => {
     'Что делать при нахождении опухоли или иного новобразования';
   typeTextElement.innerHTML = 'Онкология';
 });
-
+//filter click
+instructionsFilterElement.addEventListener('click', () => {
+  // popupFiltersElement.classList.add('popup_visible');
+  filtersContainer.classList.add('filters_visible');
+});
+//checkboxs
+filtersCheckboxElements.forEach((el) => {
+  el.addEventListener('click', () => {
+    if (el.classList.contains('filters__type-checkbox_active') === true) {
+      el.classList.remove('filters__type-checkbox_active');
+    } else {
+      el.classList.add('filters__type-checkbox_active');
+    }
+  });
+});
+//filters done click
+filtersDoneButton.addEventListener('click', () => {
+  // popupFiltersElement.classList.remove('popup_visible');
+  filtersContainer.classList.remove('filters_visible');
+});
+//первый этап клик
 firstStageBlock.addEventListener('click', () => {
+  console.log(extraHelpBlock);
+  header.scrollIntoView();
   console.log(firstStageBlock);
   footer.classList.add('footer_hidden');
   startContainer.classList.add('start_fixed');
@@ -117,7 +153,6 @@ firstStageBlock.addEventListener('click', () => {
   cases.classList.add('list_unvisible');
   clinicsSection.classList.remove('clinics_visible');
   symptomsAfterFirstStageBlock.classList.add('symptoms_visible');
-  extraHelpBlock.classList.add('symptoms_visible');
   extraHelpTitle.innerHTML = 'Как еще можем помочь';
   extraHelpSubtitleFirst.innerHTML = 'Получайте психологическую поддержку';
   extraHelpSubtitleSecond.innerHTML = 'Получайте психологическую поддержку';
@@ -131,10 +166,11 @@ firstStageBlock.addEventListener('click', () => {
   extraHelpGetElementSecond.innerHTML = 'Получить услугу';
   // stageWrapperXBlock.classList.add('stages__wrapper-x_hidden');
 });
-
+//записаться на осмотр клик
 buttonBookindVisistBigElement.addEventListener('click', () => {
   console.log(buttonBookindVisistBigElement);
   appointmentSection.classList.add('appointment_visible');
+  appointmentSection.scrollIntoView();
   symptomsAfterFirstStageBlock.classList.remove('symptoms_visible');
   extraHelpBlock.classList.remove('symptoms_visible');
   instructionsSection.classList.add('instructions_unvisible');
@@ -142,6 +178,7 @@ buttonBookindVisistBigElement.addEventListener('click', () => {
   startContainer.classList.remove('start_visible');
 });
 
+//клик записаться на клинику
 buttonOrderClinicElements.forEach((el) => {
   el.addEventListener('click', () => {
     appointmentSection.classList.remove('appointment_visible');
@@ -149,14 +186,14 @@ buttonOrderClinicElements.forEach((el) => {
     // popupChooseDateConfirmSecondElement.classList.add('popup_closed');
   });
 });
-
+//календарь выбрать дату
 popupChooseDateConfirmElement.addEventListener('click', () => {
   console.log(popupChooseDateConfirmElement);
   popupChooseDate.classList.remove('popup_opened');
   popupSuccess.classList.add('popup_opened');
   // popupSuccessConfirm.classList.add('communitys_unvisible');
 });
-
+//подтвердить запись экран
 popupSuccessConfirm.addEventListener('click', () => {
   console.log(popupSuccessConfirm);
   header.classList.remove('list_unvisible');
@@ -180,7 +217,7 @@ popupSuccessConfirm.addEventListener('click', () => {
     'Помощь в юридических вопросах от специалистов';
   extraHelpTextFourth.innerHTML = 'Моральная поддержка от профессионалов';
 });
-
+//клик по первому блоку мат помощи
 stageHelpFirstBlock.addEventListener('click', () => {
   console.log(stageHelpFirstBlock);
   footer.classList.add('footer_hidden');
@@ -190,6 +227,7 @@ stageHelpFirstBlock.addEventListener('click', () => {
   header.classList.add('list_unvisible');
   helloBlock.classList.remove('hello_opened');
   symptomsSecond.classList.add('symptoms_visible');
+  symptomsSecond.scrollIntoView();
   startSecondContainer.classList.add('start_visible');
 });
 
@@ -227,7 +265,7 @@ buttonOrderClinicSecondElements.forEach((el) => {
     appointmentSecondSection.classList.remove('appointment_visible');
   });
 });
-
+//click pay clinics
 buttonOrderClinicThirdElements.forEach((el) => {
   el.addEventListener('click', () => {
     appointmentSecondSection.classList.remove('appointment_visible');
@@ -235,10 +273,27 @@ buttonOrderClinicThirdElements.forEach((el) => {
   el.addEventListener('click', () => {
     appointmentSecondSection.classList.remove('appointment_visible');
     popupChooseDate.classList.add('popup_opened');
-    popupChooseDateConfirmElement.classList.add('community_unvisible');
+    popupChooseDateConfirmElement.classList.add('popup-date__confirm_hidden');
+    popupChooseDateConfirmSecondElement.classList.add('community_unvisible');
+    popupChooseDateConfirmThirdElement.classList.remove(
+      'popup-date__confirm_hidden'
+    );
   });
 });
-
+//click on choose date pay clinics
+popupChooseDateConfirmThirdElement.addEventListener('click', () => {
+  console.log(popupChooseDateConfirmThirdElement);
+  popupChooseDate.classList.remove('popup_opened');
+  popupSuccessConfirm.classList.add('communitys_unvisible');
+  popupGosuslugi.classList.remove('popup_opened');
+  popupSuccess.classList.remove('popup_closed');
+  popupSuccessConfirmSecond.classList.remove('popup-date__confirm_hidden');
+  linePopupSuccessElement.classList.add('communitys_unvisible');
+  enterPopupSuccessElement.classList.add('communitys_unvisible');
+  descriptionPopupSuccessElement.classList.add('communitys_unvisible');
+  pricePopupSuccessElement.innerHTML = '1690 P';
+});
+//
 gosuslugiEnterButton.addEventListener('click', () => {
   popupSuccessConfirm.classList.add('communitys_unvisible');
   popupGosuslugi.classList.remove('popup_opened');
@@ -247,10 +302,10 @@ gosuslugiEnterButton.addEventListener('click', () => {
   linePopupSuccessElement.classList.add('communitys_unvisible');
   enterPopupSuccessElement.classList.add('communitys_unvisible');
   descriptionPopupSuccessElement.classList.add('communitys_unvisible');
-  pricePopupSuccessElement.classList.add('communitys_unvisible');
+  pricePopupSuccessElement.innerHTML = 'Бесплатно';
   console.log('dsds');
 });
-
+//
 popupSuccessConfirmSecond.addEventListener('click', () => {
   console.log('ddddd');
   console.log(popupSuccessConfirm);

@@ -1,21 +1,29 @@
 .popup {
   display: flex;
   margin: 0;
-  /* position: fixed; */
+  position: fixed;
   width: 375px;
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
-  /* bottom: 0; */
-  /* visibility: hidden; */
-  /* opacity: 0; */
-  display: none;
-  transition: visibility 0.5s, opacity 0.5s linear;
-  /* background: rgba(0, 0, 0, 0.5); */
-  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  /* display: none; */
+  /* transition: visibility 0.5s, opacity 0.5s linear; */
+  background: rgba(0, 0, 0, 1);
+  z-index: 30;
+}
+.popup-filters {
+  border-radius: 20px 20px 0 0;
+  overflow-y: scroll;
 }
 .popup_opened {
   display: flex;
+}
+.popup_visible {
+  visibility: visible;
+  opacity: 1;
 }
 .popup_closed {
   display: none;

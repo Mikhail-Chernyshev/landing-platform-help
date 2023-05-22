@@ -4,7 +4,20 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: -350px;
   display: none;
+  /* overflow-y: scroll; */
+  /* position: absolute; */
+  /* top: 500; */
+  /* margin-top: -3270px; */
+  /* z-index: 10; */
+}
+.filters_visible {
+  display: flex !important;
+  transition: bottom 2s linear;
+  bottom: 2500px;
 }
 .filters__horizont {
   height: 24px;
@@ -15,7 +28,7 @@
   background-position: center;
   border-radius: 30px 30px 0px 0px;
   background-color: #ffffff;
-  display: none;
+  /* display: none; */
 }
 .filters__title {
   margin: 17px 249px 0 16px;
@@ -42,9 +55,15 @@
 }
 .filters__type-checkbox {
   width: 22px;
-  height: 22px;
+  height: 20px;
   border: 1px solid #bbc0d0;
   border-radius: 6px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2px;
+}
+.filters__type-checkbox_active {
+  background-color: #3d76fe;
 }
 .filters__type-name {
   font-weight: 400;
