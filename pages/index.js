@@ -26,6 +26,8 @@ const aboutPlatfromBlock = document.getElementById('about-platform');
 const searchBlock = document.getElementById('search');
 const casesBlock = document.getElementById('cases');
 const extraHelpBlock = document.getElementById('extra-help');
+const extraHelpSecondBlock = document.getElementById('extra-help-2');
+
 const extraHelpTitle = document.getElementById('extra-help-title');
 const extraHelpSubtitleFirst = document.getElementById('extra-help-subtitle-1');
 const extraHelpSubtitleSecond = document.getElementById(
@@ -76,7 +78,7 @@ const popupBooking = document.getElementById('popup-booking');
 const popupGosuslugi = document.querySelector('.popup-gosuslugi');
 const helloBlock = document.getElementById('hello');
 const healthBlock = document.getElementById('health');
-const stageHelpFirstBlock = document.getElementById('stages-help-1');
+const stageHelpFirstBlock = document.getElementById('stages-help-2-1');
 const symptomsSecond = document.getElementById('symptoms-2');
 const bookingFreeBlock = document.getElementById('booking-free');
 const bookingPayBlock = document.getElementById('booking-pay');
@@ -100,6 +102,8 @@ const filtersCheckboxElements = document.querySelectorAll(
   '.filters__type-checkbox'
 );
 const clinicElements = document.getElementById('clinic');
+const firstButtonChooseDate = document.getElementById('popup-date-2-day');
+const secondButtonChooseDate = document.getElementById('popup-date-4-day');
 
 console.log(extraHelpBlock);
 //онкология  клик
@@ -164,6 +168,7 @@ firstStageBlock.addEventListener('click', () => {
     'Онкологические заболевания подразумевают проведение регулярных консультаций со специалистом';
   extraHelpGetElement.innerHTML = 'Получить услугу';
   extraHelpGetElementSecond.innerHTML = 'Получить услугу';
+  extraHelpSecondBlock.classList.add('symptoms_visible');
   // stageWrapperXBlock.classList.add('stages__wrapper-x_hidden');
 });
 //записаться на осмотр клик
@@ -181,14 +186,47 @@ buttonBookindVisistBigElement.addEventListener('click', () => {
 //клик записаться на клинику
 buttonOrderClinicElements.forEach((el) => {
   el.addEventListener('click', () => {
-    appointmentSection.classList.remove('appointment_visible');
+    console.log(el);
+    extraHelpSecondBlock.classList.remove('symptoms_visible');
+
+    // appointmentSection.classList.remove('appointment_visible');
     popupChooseDate.classList.add('popup_opened');
     // popupChooseDateConfirmSecondElement.classList.add('popup_closed');
   });
 });
+//click on 2 of month
+firstButtonChooseDate.addEventListener('click', () => {
+  if (
+    secondButtonChooseDate.classList.contains('popup-date__date_active') ===
+    true
+  ) {
+    secondButtonChooseDate.classList.remove('popup-date__date_active');
+    secondButtonChooseDate.classList.add('popup-date__date_availible');
+    firstButtonChooseDate.classList.remove('popup-date__date_availible');
+    firstButtonChooseDate.classList.add('popup-date__date_active');
+  } else {
+    console.log(firstButtonChooseDate);
+  }
+});
+//click on 3 of month
+console.log(secondButtonChooseDate);
+secondButtonChooseDate.addEventListener('click', () => {
+  if (
+    firstButtonChooseDate.classList.contains('popup-date__date_active') === true
+  ) {
+    firstButtonChooseDate.classList.remove('popup-date__date_active');
+    firstButtonChooseDate.classList.add('popup-date__date_availible');
+    secondButtonChooseDate.classList.remove('popup-date__date_availible');
+    secondButtonChooseDate.classList.add('popup-date__date_active');
+  } else {
+    console.log(secondButtonChooseDate);
+  }
+});
 //календарь выбрать дату
 popupChooseDateConfirmElement.addEventListener('click', () => {
   console.log(popupChooseDateConfirmElement);
+  appointmentSection.classList.remove('appointment_visible');
+
   popupChooseDate.classList.remove('popup_opened');
   popupSuccess.classList.add('popup_opened');
   // popupSuccessConfirm.classList.add('communitys_unvisible');
@@ -199,10 +237,10 @@ popupSuccessConfirm.addEventListener('click', () => {
   header.classList.remove('list_unvisible');
   footer.classList.remove('footer_hidden');
   communitysSection.classList.remove('communitys_unvisible');
-  popupSuccess.classList.add('popup_closed');
+  popupSuccess.classList.remove('popup_opened');
   instructionsSection.classList.remove('instructions_unvisible');
   helloBlock.classList.add('hello_opened');
-  extraHelpBlock.classList.add('symptoms_visible');
+  extraHelpSecondBlock.classList.add('symptoms_visible');
   instrSelectElement.classList.remove('stages_visible');
   instrSelectElementSecond.classList.add('popup_opened');
   extraHelpTitle.innerHTML = 'Дополнительная помощь';
@@ -227,17 +265,19 @@ stageHelpFirstBlock.addEventListener('click', () => {
   header.classList.add('list_unvisible');
   helloBlock.classList.remove('hello_opened');
   symptomsSecond.classList.add('symptoms_visible');
+  symptomsSecond.classList.add('symptoms_slide');
   symptomsSecond.scrollIntoView();
+  extraHelpSecondBlock.classList.remove('symptoms_visible');
   startSecondContainer.classList.add('start_visible');
 });
-
+//click on big button
 buttonBookindVisistBigSecondElement.addEventListener('click', () => {
   console.log(buttonBookindVisistBigSecondElement);
   startSecondContainer.classList.remove('start_visible');
   symptomsSecond.classList.remove('symptoms_visible');
   popupBooking.classList.add('popup_opened');
 });
-
+//click on free booking
 bookingFreeBlock.addEventListener('click', () => {
   buttonOrderClinicThirdElements.forEach((el) => {
     el.classList.add('communitys_unvisible');
@@ -248,7 +288,7 @@ bookingFreeBlock.addEventListener('click', () => {
   popupBooking.classList.remove('popup_opened');
   appointmentSecondSection.classList.add('appointment_visible');
 });
-
+//click on pay booking
 bookingPayBlock.addEventListener('click', () => {
   buttonOrderClinicSecondElements.forEach((el) => {
     el.classList.add('communitys_unvisible');
@@ -257,22 +297,22 @@ bookingPayBlock.addEventListener('click', () => {
   appointmentSecondSection.classList.add('appointment_visible');
   console.log(bookingPayBlock);
 });
-
+//click on booking at clinic free
 buttonOrderClinicSecondElements.forEach((el) => {
   el.addEventListener('click', () => {
-    console.log('ff');
+    console.log(el);
     popupGosuslugi.classList.add('popup_opened');
     appointmentSecondSection.classList.remove('appointment_visible');
   });
 });
-//click pay clinics
+//click pay at clinics clinics
 buttonOrderClinicThirdElements.forEach((el) => {
   el.addEventListener('click', () => {
     appointmentSecondSection.classList.remove('appointment_visible');
   });
   el.addEventListener('click', () => {
     appointmentSecondSection.classList.remove('appointment_visible');
-    popupChooseDate.classList.add('popup_opened');
+    popupChooseDate.classList.add('popup-date-opened-2');
     popupChooseDateConfirmElement.classList.add('popup-date__confirm_hidden');
     popupChooseDateConfirmSecondElement.classList.add('community_unvisible');
     popupChooseDateConfirmThirdElement.classList.remove(
@@ -283,8 +323,8 @@ buttonOrderClinicThirdElements.forEach((el) => {
 //click on choose date pay clinics
 popupChooseDateConfirmThirdElement.addEventListener('click', () => {
   console.log(popupChooseDateConfirmThirdElement);
-  popupChooseDate.classList.remove('popup_opened');
-  popupSuccessConfirm.classList.add('communitys_unvisible');
+  popupChooseDate.classList.remove('popup-date-opened-2');
+  popupSuccessConfirm.classList.add('popup-date__confirm_hidden');
   popupGosuslugi.classList.remove('popup_opened');
   popupSuccess.classList.remove('popup_closed');
   popupSuccessConfirmSecond.classList.remove('popup-date__confirm_hidden');
@@ -293,9 +333,13 @@ popupChooseDateConfirmThirdElement.addEventListener('click', () => {
   descriptionPopupSuccessElement.classList.add('communitys_unvisible');
   pricePopupSuccessElement.innerHTML = '1690 P';
 });
-//
+//click on gosuslugi
 gosuslugiEnterButton.addEventListener('click', () => {
-  popupSuccessConfirm.classList.add('communitys_unvisible');
+  // popupSuccessConfirm.classList.add('communitys_unvisible');
+  // popupSuccessConfirm.classList.remove('communitys_unvisible');
+  // popupSuccessConfirm.classList.add('community_unvisible');
+  popupSuccessConfirm.classList.add('popup-date__confirm_hidden');
+  popupSuccess.classList.add('popup-success_visible');
   popupGosuslugi.classList.remove('popup_opened');
   popupSuccess.classList.remove('popup_closed');
   popupSuccessConfirmSecond.classList.remove('popup-date__confirm_hidden');
@@ -304,8 +348,9 @@ gosuslugiEnterButton.addEventListener('click', () => {
   descriptionPopupSuccessElement.classList.add('communitys_unvisible');
   pricePopupSuccessElement.innerHTML = 'Бесплатно';
   console.log('dsds');
+  console.log(popupSuccess);
 });
-//
+//ssssss
 popupSuccessConfirmSecond.addEventListener('click', () => {
   console.log('ddddd');
   console.log(popupSuccessConfirm);
@@ -314,7 +359,7 @@ popupSuccessConfirmSecond.addEventListener('click', () => {
   header.classList.remove('list_unvisible');
   footer.classList.remove('footer_hidden');
   communitysSection.classList.remove('communitys_unvisible');
-  popupSuccess.classList.add('popup_closed');
+  popupSuccess.classList.remove('popup-success_visible');
   instructionsSection.classList.remove('instructions_unvisible');
   helloBlock.classList.add('hello_opened');
   extraHelpBlock.classList.add('symptoms_visible');
