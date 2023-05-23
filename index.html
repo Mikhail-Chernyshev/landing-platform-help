@@ -17,6 +17,37 @@
       <div class="header__icon-marketplace"></div>
       <div class="header__icon-burger-menu"></div>
     </header>
+    <!-- popup success confirm -->
+    <div class="popup popup-success">
+      <div class="popup-date__content popup-success__content">
+        <div class="symptoms__close popup-date__close">X</div>
+        <h2 class="popup-success__title">
+          Вы записались на приём 12 июня, 12:30 • Четверг
+        </h2>
+        <h3 class="popup-success__subtitle">Рекомендуем прийти за полчаса</h3>
+        <p class="popup-success__address">Тверская, 15</p>
+        <p class="popup-success__clinic">
+          Региональный центр медико-социального сопровождения
+        </p>
+        <p id="popup-success-price" class="popup-success__cost">Приём 1690 ₽</p>
+        <div id="popup-success-line" class="popup-success__line"></div>
+        <p id="popup-success-enter" class="popup-success__enter">
+          Войдите в личный кабинет, чтобы отслеживать лечение
+        </p>
+        <p id="popup-success-description" class="popup-success__description">
+          Отобразим текущие записи и подскажем следующие шаги
+        </p>
+        <button id="popup-success-confirm" class="popup-date__confirm">
+          Создать аккаунт
+        </button>
+        <button
+          id="popup-success-confirm-2"
+          class="popup-date__confirm popup-date__confirm_hidden"
+        >
+          Перейти в личный кабинет
+        </button>
+      </div>
+    </div>
     <main class="content">
       <!-- popup money help -->
       <div id="symptoms-2" class="symptoms symptoms-second">
@@ -1032,6 +1063,86 @@
         </div>
         <button class="list__all">Смотреть все услуги</button>
       </section>
+      <!-- section else after booking button -->
+      <div id="extra-help-2" class="stages__extra-help stages__extra-help-2">
+        <h2 id="extra-help-title" class="stages__title">
+          Дополнительная помощь
+        </h2>
+        <div id="stage-wrapper-x" class="stages__wrapper-x">
+          <div id="stages-help-2-1" class="stages__help">
+            <div class="stages__wrapper">
+              <h3 id="extra-help-subtitle-1" class="stages__subtitle">
+                Материальная помощь <br />
+                и льготы
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <p id="extra-help-text-1" class="stages__text">
+              Услуги, которые можете получить за счёт Государства, фондов и НКО
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <p id="extra-help-get" class="community__social stages__social">
+                Выбрать
+              </p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stages__help">
+            <div class="stages__wrapper">
+              <h3 id="extra-help-subtitle-2" class="stages__subtitle">
+                Нематериальная <br />
+                помощь
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <p id="extra-help-text-2" class="stages__text">
+              Консультации НКО и специалистов
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <p id="extra-help-get-2" class="community__social stages__social">
+                Выбрать
+              </p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stages__help">
+            <div class="stages__wrapper">
+              <h3 id="extra-help-subtitle-3" class="stages__subtitle">
+                Юридическая <br />
+                помощь
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <p id="extra-help-text-3" class="stages__text">
+              Помощь в юридических вопросах от специалистов
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <!-- при нажатии на первый этап меняется текст на Получить услугу -->
+              <p class="community__social stages__social">Выбрать</p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+          <div class="stages__help">
+            <div class="stages__wrapper">
+              <!-- при нажатии на первый этап меняется текст на Получайте психологическую поддержку -->
+              <h3 id="extra-help-subtitle-4" class="stages__subtitle">
+                Психологическая <br />
+                помощь
+              </h3>
+              <div class="stages__icon"></div>
+            </div>
+            <!-- при нажатии на первый этап меняется текст на Диагноз онкологического заболевания может быть трудным и вызвать эмоциональное напряжение, поэтому важно получить своевременную психологическую поддержку -->
+            <p id="extra-help-text-4" class="stages__text">
+              Моральная поддержка от профессионалов
+            </p>
+            <div class="community__link stage__link stage__link-second">
+              <!-- при нажатии на первый этап меняется текст на Получить услугу -->
+              <p class="community__social stages__social">Выбрать</p>
+              <div class="community__icon-arrow stages__icon-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section id="instructions" class="instructions">
         <h2 id="instr-title" class="instructions__title">72 инструкции</h2>
         <h3 id="instr-subtitle" class="instructions__subtitle">
@@ -1420,6 +1531,7 @@
           </div>
         </div>
       </section>
+
       <!-- появляется при нажатии на "Записаться на осмотр" -->
       <section id="appointment" class="appointment">
         <div class="symptoms__close">X</div>
@@ -1999,124 +2111,6 @@
         </div>
       </section>
 
-      <!-- popup choose date -->
-      <div class="popup popup-date">
-        <div class="popup-date__content">
-          <div class="symptoms__close popup-date__close">X</div>
-          <div class="popup-date__container-month">
-            <div class="popup-date__arrow-left"></div>
-            <p class="popup-date__month">Май</p>
-            <div class="popup-date__arrow-right"></div>
-          </div>
-          <div class="popup-date__wrapper-week">
-            <p class="popup-date__day">Пн</p>
-            <p class="popup-date__day">Вт</p>
-            <p class="popup-date__day">Ср</p>
-            <p class="popup-date__day">Чт</p>
-            <p class="popup-date__day">Пт</p>
-            <p class="popup-date__day">Сб</p>
-            <p class="popup-date__day">Вс</p>
-          </div>
-          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-            <p class="popup-date__date">1</p>
-            <p class="popup-date__date popup-date__date_active">2</p>
-            <p class="popup-date__date popup-date__date_availible">3</p>
-            <p class="popup-date__date">4</p>
-            <p class="popup-date__date">5</p>
-            <p class="popup-date__date">6</p>
-            <p class="popup-date__date">7</p>
-          </div>
-          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-            <p class="popup-date__date">8</p>
-            <p class="popup-date__date">9</p>
-            <p class="popup-date__date">10</p>
-            <p class="popup-date__date">11</p>
-            <p class="popup-date__date">12</p>
-            <p class="popup-date__date">13</p>
-            <p class="popup-date__date">14</p>
-          </div>
-          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-            <p class="popup-date__date">15</p>
-            <p class="popup-date__date">16</p>
-            <p class="popup-date__date">17</p>
-            <p class="popup-date__date">18</p>
-            <p class="popup-date__date">19</p>
-            <p class="popup-date__date">20</p>
-            <p class="popup-date__date">21</p>
-          </div>
-          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-            <p class="popup-date__date">22</p>
-            <p class="popup-date__date">23</p>
-            <p class="popup-date__date">24</p>
-            <p class="popup-date__date">25</p>
-            <p class="popup-date__date">26</p>
-            <p class="popup-date__date">27</p>
-            <p class="popup-date__date">28</p>
-          </div>
-          <div class="popup-date__wrapper-week popup-date__wrapper-dates">
-            <p class="popup-date__date">29</p>
-            <p class="popup-date__date">30</p>
-            <p class="popup-date__date">31</p>
-          </div>
-          <p class="popup-date__slot">Доступное время на 2 мая</p>
-          <div class="popup-date__times">
-            <button class="popup-date__time popup-date__time_active">
-              14:00
-            </button>
-            <button class="popup-date__time">15:00</button>
-            <button class="popup-date__time">17:00</button>
-            <button class="popup-date__time">19:00</button>
-          </div>
-          <button id="popup-date-confirm-button-1" class="popup-date__confirm">
-            Подтвердить запись
-          </button>
-          <button
-            id="popup-date-confirm-button-2"
-            class="popup-date__confirm popup-date__confirm_hidden"
-          >
-            Подтвердить запись
-          </button>
-          <button
-            id="popup-date-confirm-button-3"
-            class="popup-date__confirm popup-date__confirm_hidden"
-          >
-            Подтвердить запись
-          </button>
-        </div>
-      </div>
-      <!-- popup success confirm -->
-      <div class="popup popup-success">
-        <div class="popup-date__content popup-success__content">
-          <div class="symptoms__close popup-date__close">X</div>
-          <h2 class="popup-success__title">
-            Вы записались на приём 12 июня, 12:30 • Четверг
-          </h2>
-          <h3 class="popup-success__subtitle">Рекомендуем прийти за полчаса</h3>
-          <p class="popup-success__address">Тверская, 15</p>
-          <p class="popup-success__clinic">
-            Региональный центр медико-социального сопровождения
-          </p>
-          <p id="popup-success-price" class="popup-success__cost">
-            Приём 1690 ₽
-          </p>
-          <div id="popup-success-line" class="popup-success__line"></div>
-          <p id="popup-success-enter" class="popup-success__enter">
-            Войдите в личный кабинет, чтобы отслеживать лечение
-          </p>
-          <p id="popup-success-description" class="popup-success__description">
-            Отобразим текущие записи и подскажем следующие шаги
-          </p>
-          <button id="popup-success-confirm" class="popup-date__confirm">
-            Создать аккаунт
-          </button>
-          <button
-            id="popup-success-confirm-2"
-            class="popup-date__confirm popup-date__confirm_hidden"
-          >
-            Перейти в личный кабинет
-          </button>
-        </div>
-      </div>
       <!-- popup записаться  -->
       <div id="popup-booking" class="popup popup-booking">
         <div class="popup-date__content popup-booking__content">
@@ -2245,6 +2239,101 @@
           <span class="start__span">от 1 до 5 дней</span>
         </p>
         <button class="start__button">Записаться</button>
+      </div>
+    </div>
+    <!-- popup choose date -->
+    <div class="popup popup-date">
+      <div class="popup-date__content">
+        <div class="symptoms__close popup-date__close">X</div>
+        <div class="popup-date__container-month">
+          <div class="popup-date__arrow-left"></div>
+          <p class="popup-date__month">Май</p>
+          <div class="popup-date__arrow-right"></div>
+        </div>
+        <div class="popup-date__wrapper-week">
+          <p class="popup-date__day">Пн</p>
+          <p class="popup-date__day">Вт</p>
+          <p class="popup-date__day">Ср</p>
+          <p class="popup-date__day">Чт</p>
+          <p class="popup-date__day">Пт</p>
+          <p class="popup-date__day">Сб</p>
+          <p class="popup-date__day">Вс</p>
+        </div>
+        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+          <p class="popup-date__date">1</p>
+          <p
+            id="popup-date-2-day"
+            class="popup-date__date popup-date__date_active"
+          >
+            2
+          </p>
+          <p
+            id="popup-date-4-day"
+            class="popup-date__date popup-date__date_availible"
+          >
+            3
+          </p>
+          <p class="popup-date__date">4</p>
+          <p class="popup-date__date">5</p>
+          <p class="popup-date__date">6</p>
+          <p class="popup-date__date">7</p>
+        </div>
+        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+          <p class="popup-date__date">8</p>
+          <p class="popup-date__date">9</p>
+          <p class="popup-date__date">10</p>
+          <p class="popup-date__date">11</p>
+          <p class="popup-date__date">12</p>
+          <p class="popup-date__date">13</p>
+          <p class="popup-date__date">14</p>
+        </div>
+        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+          <p class="popup-date__date">15</p>
+          <p class="popup-date__date">16</p>
+          <p class="popup-date__date">17</p>
+          <p class="popup-date__date">18</p>
+          <p class="popup-date__date">19</p>
+          <p class="popup-date__date">20</p>
+          <p class="popup-date__date">21</p>
+        </div>
+        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+          <p class="popup-date__date">22</p>
+          <p class="popup-date__date">23</p>
+          <p class="popup-date__date">24</p>
+          <p class="popup-date__date">25</p>
+          <p class="popup-date__date">26</p>
+          <p class="popup-date__date">27</p>
+          <p class="popup-date__date">28</p>
+        </div>
+        <div class="popup-date__wrapper-week popup-date__wrapper-dates">
+          <p class="popup-date__date">29</p>
+          <p class="popup-date__date">30</p>
+          <p class="popup-date__date">31</p>
+        </div>
+        <p class="popup-date__slot">Доступное время на 2 мая</p>
+        <div class="popup-date__times">
+          <button class="popup-date__time popup-date__time_active">
+            14:00
+          </button>
+          <button class="popup-date__time">15:00</button>
+          <button class="popup-date__time">17:00</button>
+          <button class="popup-date__time">19:00</button>
+        </div>
+        <button id="popup-date-confirm-button-1" class="popup-date__confirm">
+          Подтвердить запись
+        </button>
+        <button
+          id="popup-date-confirm-button-2"
+          class="popup-date__confirm popup-date__confirm_hidden"
+        >
+          Подтвердить запись
+        </button>
+        <button
+          id="popup-date-confirm-button-3"
+          class="popup-date__confirm popup-date__confirm_hidden"
+        >
+          Подтвердить запись
+        </button>
       </div>
     </div>
     <!-- прячем футер при нажатии на первый этап онкологии -->
