@@ -178,6 +178,8 @@ buttonBookindVisistBigElement.addEventListener('click', () => {
   appointmentSection.scrollIntoView();
   symptomsAfterFirstStageBlock.classList.remove('symptoms_visible');
   extraHelpBlock.classList.remove('symptoms_visible');
+  extraHelpSecondBlock.classList.remove('symptoms_visible');
+
   instructionsSection.classList.add('instructions_unvisible');
   communitysSection.classList.add('communitys_unvisible');
   startContainer.classList.remove('start_visible');
@@ -187,7 +189,7 @@ buttonBookindVisistBigElement.addEventListener('click', () => {
 buttonOrderClinicElements.forEach((el) => {
   el.addEventListener('click', () => {
     console.log(el);
-    extraHelpSecondBlock.classList.remove('symptoms_visible');
+    extraHelpBlock.classList.remove('symptoms_visible');
 
     // appointmentSection.classList.remove('appointment_visible');
     popupChooseDate.classList.add('popup_opened');
