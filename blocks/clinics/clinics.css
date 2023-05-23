@@ -1,0 +1,7 @@
+.clinics {
+  display: none;
+  flex-direction: column;
+}
+.clinics_visible {
+  display: flex;
+}

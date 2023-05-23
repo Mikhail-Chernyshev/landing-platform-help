@@ -1,0 +1,44 @@
+.footer {
+  height: 88px;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px -1px 20px rgba(48, 52, 63, 0.16);
+  backdrop-filter: blur(10px);
+  border-radius: 12px 12px 0px 0px;
+  /* position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+}
+.footer_hidden {
+  display: none;
+}
+.footer__nav {
+  width: 125px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer__icon {
+  margin: 10px 0 0 52px;
+  width: 22px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.footer__icon-main {
+  background-image: url('../../images/icon-home.svg');
+}
+.footer__name {
+  margin: 7.5px 0 0 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #c7cad1;
+}
+.footer__name_active {
+  color: #3d76fe;
+}

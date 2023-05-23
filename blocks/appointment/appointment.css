@@ -1,0 +1,12 @@
+.appointment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+  display: none;
+}
+.appointment__wrapper-x {
+  display: flex;
+}
+.appointment_visible {
+  display: flex;
+}

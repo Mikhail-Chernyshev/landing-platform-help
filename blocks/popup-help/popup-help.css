@@ -1,0 +1,87 @@
+.popup-help {
+}
+.popup-help__title {
+  margin-bottom: 32px;
+}
+.popup-help__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 16px 15px 2px;
+}
+.popup-help__button {
+  padding-left: 21px;
+  padding-right: 21px;
+}
+.popup-help__button_active {
+  background-color: #ffffff;
+  color: #000000;
+}
+.popup-help__buttons {
+  margin-left: -80px;
+  margin-right: 12px;
+  width: 460px;
+  overflow: hidden;
+  text-align: left;
+}
+.popup-help__what-to-do {
+  margin-bottom: 15px;
+}
+.popup-help__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+  margin: 0 16px 35px;
+}
+.popup-help__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin: 0 15px 12px;
+}
+.popup-help__document {
+  height: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  margin: 0 114px 0 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 4px 8px;
+  display: flex;
+}
+.popup-help__document-span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../images/icon-symbol-i.svg');
+  margin: 2px 0 0 10px;
+}
+.popup-help__container {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  width: 343px;
+  height: 412px;
+  margin: -12px auto 40px;
+  display: flex;
+  flex-direction: column;
+}
+.popup-help__option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0px;
+}
+.popup-help-start {
+  margin-top: 10px;
+  display: flex;
+  height: 94px;
+}

@@ -1,0 +1,218 @@
+.popup {
+  display: flex;
+  margin: 0;
+  position: fixed;
+  width: 375px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  /* display: none; */
+  /* transition: visibility 0.5s, opacity 0.5s linear; */
+  background: rgba(0, 0, 0, 1);
+  z-index: 30;
+}
+.popup-filters {
+  border-radius: 20px 20px 0 0;
+  overflow-y: scroll;
+}
+.popup_opened {
+  display: flex;
+}
+.popup_visible {
+  visibility: visible;
+  opacity: 1;
+}
+.popup_closed {
+  display: none;
+}
+.popup-date__content {
+  position: relative;
+  margin: auto auto;
+  padding: 0;
+  background-color: #ffffff;
+  width: 375px;
+  height: 690px;
+  z-index: 12;
+  border-radius: 20px 20px 0px 0px;
+}
+.popup-date__close {
+  border-radius: 0;
+  margin: 25px 25px 43px 330px;
+  width: 20px;
+  height: 20px;
+}
+.popup-date__container-month {
+  width: 290px;
+  height: 35px;
+  margin: 0 43px 24px;
+  justify-content: space-between;
+  display: flex;
+}
+.popup-date__month {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0 0 24px;
+}
+.popup-date__arrow-left {
+  margin-top: 8px;
+  width: 10px;
+  height: 20px;
+  background-image: url('../../images/icon-left-date-popup.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.popup-date__arrow-right {
+  margin-top: 8px;
+  width: 10px;
+  height: 20px;
+  background-image: url('../../images/icon-right-date-popup.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.popup-date__wrapper-week {
+  width: 352px;
+  height: 40px;
+  margin: 0 auto 16px;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #a9afb5;
+}
+.popup-date__day {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+.popup-date__date {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+.popup-date__date_availible {
+  color: #1e1f20;
+}
+.popup-date__date_active {
+  color: #ffffff;
+  background-color: #3d76fe;
+  border-radius: 12px;
+}
+.popup-date__slot {
+  width: 212px;
+  margin: 0 auto 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #1a1a1a;
+}
+.popup-date__times {
+  display: flex;
+  margin: 0 auto 24px;
+  gap: 8px;
+  width: 308px;
+  height: 40px;
+}
+.popup-date__time {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  background: #f4f4f5;
+  border-radius: 30px;
+  border: none;
+  padding: 8px 14px;
+}
+.popup-date__time_active {
+  background: #3d76fe;
+  color: #ffffff;
+}
+.popup-date__confirm {
+  width: 311px;
+  height: 55px;
+  background-color: #3d76fe;
+  box-shadow: 0px 24px 50px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  border: none;
+  margin: 0 32px;
+  color: #ffffff;
+}
+.popup-date__confirm_hidden {
+  display: none;
+}
+.popup-success__title {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 91%;
+  letter-spacing: -1px;
+  color: #0f1d4b;
+  margin: 0 16px 20px;
+}
+.popup-success__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #6a6a73;
+  width: 296px;
+  margin: 0 63px 30px 16px;
+}
+.popup-success__address {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0 0 8px 16px;
+}
+.popup-success__clinic {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #6a6a73;
+  margin: 0 0 27px 16px;
+}
+.popup-success__cost {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0 236px 40px 16px;
+}
+.popup-success__line {
+  width: 343px;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin: 0 16px 30px;
+}
+.popup-success__enter {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  margin: 0 16px 20px;
+}
+.popup-success__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #6a6a73;
+  margin: 0 63px 36px 16px;
+  width: 296px;
+}
