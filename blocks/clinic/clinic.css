@@ -14,12 +14,14 @@
   margin-top: 5px;
 }
 .clinic__icon-comments {
-  background-image: url('../../images/Icon-support-teams.svg');
+  background-image: url('../../images/icon-clinic-message.svg');
   margin-right: 4px;
+  margin-top: 2px;
 }
 .clinic__icon-forward {
-  background-image: url('../../images/Icon-support-teams.svg');
+  background-image: url('../../images/icon-clinic-star.svg');
   margin-right: 4px;
+  margin-top: 2px;
 }
 .clinic__button {
   font-size: 12px;

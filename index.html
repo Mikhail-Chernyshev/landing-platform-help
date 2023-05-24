@@ -20,7 +20,7 @@
     <!-- popup success confirm -->
     <div class="popup popup-success">
       <div class="popup-date__content popup-success__content">
-        <div class="symptoms__close popup-date__close">X</div>
+        <div class="symptoms__close popup-date__close"></div>
         <h2 class="popup-success__title">
           Вы записались на приём 12 июня, 12:30 • Четверг
         </h2>
@@ -51,7 +51,9 @@
     <main class="content">
       <!-- popup money help -->
       <div id="symptoms-2" class="symptoms symptoms-second">
-        <div class="symptoms__close">X</div>
+        <div class="symptoms__bg symptoms__bg-2"></div>
+        <div class="symptoms__bg_2 symptoms__bg_2-2"></div>
+        <div class="symptoms__close"></div>
         <h2 class="symptoms__title popup-help__title">
           Материальная помощь и льготы от государства
         </h2>
@@ -393,7 +395,7 @@
       <!-- появляется при нажатии на первый этап -->
       <div id="symptomsAfterClickFirstStage" class="symptoms symptoms-first">
         <div class="symptoms__bg"></div>
-        <div class="symptoms__bg-2"></div>
+        <div class="symptoms__bg_2"></div>
         <div class="symptoms__close">X</div>
         <h2 class="symptoms__title">
           Обнаружение возможных признаков онкологии
@@ -433,7 +435,7 @@
 
       <section id="cases" class="cases">
         <!-- cancer -->
-        <div class="case">
+        <div id="cancer" class="case">
           <div class="case__wrapper-horizont">
             <div class="case__wrapper-vertical">
               <h3 class="case__title">Онкология</h3>
@@ -450,7 +452,7 @@
               alt="cancer case"
             />
           </div>
-          <div id="cancer" class="case__wrapper-vertical-2">
+          <div  class="case__wrapper-vertical-2">
             <p class="case__text case__text_steps">4 шага</p>
             <div class="case__wrapper-horizont-2">
               <p class="case__select">Решение от 1,5 до 3 месяцев</p>
@@ -1234,8 +1236,8 @@
               </button>
             </div>
             <img
-              class="instruction__image"
-              src="./images/image-instruction-cut.jpg"
+              class="instruction__image instruction__image-2"
+              src="./images/image-man-instruct.png"
             />
           </div>
           <div class="instruction">
@@ -1256,8 +1258,8 @@
               </button>
             </div>
             <img
-              class="instruction__image"
-              src="./images/image-instruction-cut.jpg"
+              class="instruction__image instruction__image-girl-2"
+              src="./images/image-girl-2-instruct.png"
             />
           </div>
           <div class="instruction">
@@ -1280,8 +1282,8 @@
               </button>
             </div>
             <img
-              class="instruction__image"
-              src="./images/image-instruction-cut.jpg"
+              class="instruction__image instruction__image-3"
+              src="./images/image-man-instruct.png"
             />
           </div>
         </div>
@@ -1472,7 +1474,7 @@
           </div>
           <!-- 3 -->
           <div class="community">
-            <div class="community__logo"></div>
+            <div class="community__logo community__logo-odnoklassniki"></div>
             <p class="community__people">25000 человек</p>
             <h4
               id="commun-service-3"
@@ -1534,7 +1536,7 @@
 
       <!-- появляется при нажатии на "Записаться на осмотр" -->
       <section id="appointment" class="appointment">
-        <div class="symptoms__close">X</div>
+        <div class="symptoms__close"></div>
         <h3 class="services__title">Центры обследования в</h3>
         <div class="services__select">
           <p class="services__city">Екатеринбурге</p>
@@ -1814,7 +1816,7 @@
 
       <!-- появляется при нажатии на "Записаться на осмотр" -->
       <section id="appointment-2" class="appointment">
-        <div class="symptoms__close">X</div>
+        <div class="symptoms__close"></div>
         <h3 class="services__title">Центры обследования в</h3>
         <div class="services__select">
           <p class="services__city">Екатеринбурге</p>
@@ -2114,7 +2116,7 @@
       <!-- popup записаться  -->
       <div id="popup-booking" class="popup popup-booking">
         <div class="popup-date__content popup-booking__content">
-          <div class="symptoms__close popup-booking__close">X</div>
+          <div class="symptoms__close popup-booking__close"></div>
           <h2 class="popup-booking__title">
             В какую поликлинику хотите записаться?
           </h2>
@@ -2201,7 +2203,7 @@
     <!-- popup gosuslugi -->
     <div class="popup popup-gosuslugi">
       <div class="popup-date__content popup-gosuslugi__content">
-        <div class="symptoms__close popup-booking__close">X</div>
+        <div class="symptoms__close popup-booking__close"></div>
         <h2 class="popup-gosuslugi__title">
           Войдите через Госуслуги,<br />
           чтобы записаться в<br />
@@ -2227,13 +2229,13 @@
           4 шага в случае онкологии <br />
           <span class="start__span">от 10 дней до 1 месяца</span>
         </p>
-        <button class="start__button">Начать путь</button>
+        <button id="start-way-button" class="start__button">Начать путь</button>
       </div>
     </div>
     <!-- перед футером появляется этот блок -->
     <div id="start-2" class="footer start start-2">
       <div class="start__icon-up"></div>
-      <div class="start__wrapper">
+      <div class="start__wrapper"> 
         <p class="start__text">
           Получение материальной помощи и льгот при онкологии<br />
           <span class="start__span">от 1 до 5 дней</span>
@@ -2244,7 +2246,7 @@
     <!-- popup choose date -->
     <div class="popup popup-date">
       <div class="popup-date__content">
-        <div class="symptoms__close popup-date__close">X</div>
+        <div class="symptoms__close popup-date__close"></div>
         <div class="popup-date__container-month">
           <div class="popup-date__arrow-left"></div>
           <p class="popup-date__month">Май</p>
@@ -2335,6 +2337,7 @@
           Подтвердить запись
         </button>
       </div>
+      
     </div>
     <!-- прячем футер при нажатии на первый этап онкологии -->
     <footer id="footer" class="footer">
@@ -2343,14 +2346,15 @@
         <p class="footer__name footer__name_active">Главная</p>
       </div>
       <div class="footer__nav">
-        <div class="footer__icon footer__icon-main"></div>
-        <p class="footer__name footer__name_active">Маркетплейс</p>
+        <div class="footer__icon footer__icon-marketplace"></div>
+        <p class="footer__name">Маркетплейс</p>
       </div>
       <div class="footer__nav">
-        <div class="footer__icon footer__icon-main"></div>
-        <p class="footer__name footer__name_active">Профиль</p>
+        <div class="footer__icon footer__icon-profile"></div>
+        <p class="footer__name">Профиль</p>
       </div>
     </footer>
   </div>
   <script type="module" src="./pages/index.js"></script>
 </body>
+

@@ -104,8 +104,52 @@ const filtersCheckboxElements = document.querySelectorAll(
 const clinicElements = document.getElementById('clinic');
 const firstButtonChooseDate = document.getElementById('popup-date-2-day');
 const secondButtonChooseDate = document.getElementById('popup-date-4-day');
+const buttonStartWayFromSlider = document.getElementById('start-way-button');
 
 console.log(extraHelpBlock);
+//start way click
+buttonStartWayFromSlider.addEventListener('click', () => {
+  if (stagesSection.classList.contains('stages_visible')) {
+    console.log('fdf');
+    stagesSection.classList.remove('stages_visible');
+    header.scrollIntoView();
+    footer.classList.add('footer_hidden');
+    startContainer.classList.add('start_fixed');
+    startContainer.classList.add('start_first-stage');
+    header.classList.add('list_unvisible');
+    aboutPlatfromBlock.classList.add('list_unvisible');
+    search.classList.add('list_unvisible');
+    cases.classList.add('list_unvisible');
+    clinicsSection.classList.remove('clinics_visible');
+    symptomsAfterFirstStageBlock.classList.add('symptoms_visible');
+    extraHelpTitle.innerHTML = 'Как еще можем помочь';
+    extraHelpSubtitleFirst.innerHTML = 'Получайте психологическую поддержку';
+    extraHelpSubtitleSecond.innerHTML = 'Получайте психологическую поддержку';
+    serviceTextElementThird.innerHTML =
+      'Жизнь после онкологических заболеваний';
+    serviceTextElementFourth.innerHTML = 'Ваша жизнь сильнее рака';
+    extraHelpTextFirst.innerHTML =
+      'Диагноз онкологического заболевания может быть трудным и вызвать эмоциональное напряжение, поэтому важно получить своевременную психологическую поддержку';
+    extraHelpTextSecond.innerHTML =
+      'Онкологические заболевания подразумевают проведение регулярных консультаций со специалистом';
+    extraHelpGetElement.innerHTML = 'Получить услугу';
+    extraHelpGetElementSecond.innerHTML = 'Получить услугу';
+    extraHelpSecondBlock.classList.add('symptoms_visible');
+    // stageWrapperXBlock.classList.add('stages__wrapper-x_hidden');
+  } else if (
+    symptomsAfterFirstStageBlock.classList.contains('symptoms_visible')
+  ) {
+    console.log(buttonBookindVisistBigElement);
+    appointmentSection.classList.add('appointment_visible');
+    appointmentSection.scrollIntoView();
+    symptomsAfterFirstStageBlock.classList.remove('symptoms_visible');
+    extraHelpBlock.classList.remove('symptoms_visible');
+    extraHelpSecondBlock.classList.remove('symptoms_visible');
+    instructionsSection.classList.add('instructions_unvisible');
+    communitysSection.classList.add('communitys_unvisible');
+    startContainer.classList.remove('start_visible');
+  }
+});
 //онкология  клик
 cancerContainer.addEventListener('click', () => {
   stagesSection.classList.add('stages_visible');
@@ -125,8 +169,14 @@ cancerContainer.addEventListener('click', () => {
 });
 //filter click
 instructionsFilterElement.addEventListener('click', () => {
-  // popupFiltersElement.classList.add('popup_visible');
-  filtersContainer.classList.add('filters_visible');
+  if (
+    symptomsAfterFirstStageBlock.classList.contains('symptoms_visible') === true
+  ) {
+    filtersContainer.classList.add('filters_visible_low');
+  } else {
+    // popupFiltersElement.classList.add('popup_visible');
+    filtersContainer.classList.add('filters_visible');
+  }
 });
 //checkboxs
 filtersCheckboxElements.forEach((el) => {
@@ -141,6 +191,8 @@ filtersCheckboxElements.forEach((el) => {
 //filters done click
 filtersDoneButton.addEventListener('click', () => {
   // popupFiltersElement.classList.remove('popup_visible');
+  filtersContainer.classList.remove('filters_visible_low');
+
   filtersContainer.classList.remove('filters_visible');
 });
 //первый этап клик
@@ -179,7 +231,6 @@ buttonBookindVisistBigElement.addEventListener('click', () => {
   symptomsAfterFirstStageBlock.classList.remove('symptoms_visible');
   extraHelpBlock.classList.remove('symptoms_visible');
   extraHelpSecondBlock.classList.remove('symptoms_visible');
-
   instructionsSection.classList.add('instructions_unvisible');
   communitysSection.classList.add('communitys_unvisible');
   startContainer.classList.remove('start_visible');
@@ -324,11 +375,13 @@ buttonOrderClinicThirdElements.forEach((el) => {
 });
 //click on choose date pay clinics
 popupChooseDateConfirmThirdElement.addEventListener('click', () => {
-  console.log(popupChooseDateConfirmThirdElement);
+  console.log('ewew');
   popupChooseDate.classList.remove('popup-date-opened-2');
+  // popupSuccessConfirm.classList.add('communitys_unvisible');
+
   popupSuccessConfirm.classList.add('popup-date__confirm_hidden');
   popupGosuslugi.classList.remove('popup_opened');
-  popupSuccess.classList.remove('popup_closed');
+  popupSuccess.classList.add('popup_opened');
   popupSuccessConfirmSecond.classList.remove('popup-date__confirm_hidden');
   linePopupSuccessElement.classList.add('communitys_unvisible');
   enterPopupSuccessElement.classList.add('communitys_unvisible');
@@ -356,6 +409,7 @@ gosuslugiEnterButton.addEventListener('click', () => {
 popupSuccessConfirmSecond.addEventListener('click', () => {
   console.log('ddddd');
   console.log(popupSuccessConfirm);
+  popupSuccess.classList.remove('popup_opened');
   timelineFirst.classList.add('timeline_hidden');
   timelineSecond.classList.remove('timeline_hidden');
   header.classList.remove('list_unvisible');

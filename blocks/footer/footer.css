@@ -32,6 +32,12 @@
 .footer__icon-main {
   background-image: url('../../images/icon-home.svg');
 }
+.footer__icon-marketplace {
+  background-image: url('../../images/icon-communitys-gray.svg');
+}
+.footer__icon-profile {
+  background-image: url('../../images/icon-profile-gray.svg');
+}
 .footer__name {
   margin: 7.5px 0 0 0;
   font-weight: 500;

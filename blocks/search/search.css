@@ -10,10 +10,10 @@
   display: flex;
 }
 .search__icon {
-  width: 14px;
-  height: 14px;
-  background-image: url('../../images/icon-home.svg');
-  margin: 21px 15px 23px 22px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../images/icon-search-input.svg');
+  margin: 15px 15px 23px 22px;
 }
 .search__input {
   width: 274px;

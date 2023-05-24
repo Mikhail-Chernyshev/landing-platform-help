@@ -31,6 +31,11 @@
 .community__logo-dzen {
   background-image: url('../../images/icon-yandex-dzen.svg');
 }
+.community__logo-odnoklassniki{
+  width:45px;
+  height: 45px;
+  background-image: url('../../images/icon-odnoklassniki.svg');
+}
 .community__people {
   margin: 0 auto 13px 20px;
   background-color: #edf5ff;

@@ -59,6 +59,7 @@
   margin: 25px 25px 43px 330px;
   width: 20px;
   height: 20px;
+  background-image: url('../../images/icon-close-popup.svg');
 }
 .popup-date__container-month {
   width: 290px;
