@@ -19,7 +19,7 @@
   border-radius: 16px;
   z-index: 1;
 }
-.symptoms__bg-2 {
+.symptoms__bg_2 {
   position: absolute;
   width: 490.34px;
   height: 592.24px;
@@ -29,6 +29,14 @@
   border-radius: 16px;
   transform: matrix(-0.99, 0.17, -0.2, -0.98, 0, 0);
 }
+.symptoms__bg-2 {
+  top:-400px;
+}
+.symptoms__bg_2-2 {
+  right: -300px;
+
+  
+}
 .symptoms-first {
   position: relative;
   overflow: hidden;
@@ -36,6 +44,7 @@
 }
 .symptoms-second {
   position: relative;
+  overflow: hidden;
 }
 
 .symptoms_visible {

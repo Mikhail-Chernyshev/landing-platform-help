@@ -19,6 +19,11 @@
   transition: bottom 2s linear;
   bottom: 2500px;
 }
+.filters_visible_low {
+  display: flex !important;
+  transition: bottom 2s linear;
+  bottom: 500px;
+}
 .filters__horizont {
   height: 24px;
   width: 375px;

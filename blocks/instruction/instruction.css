@@ -40,18 +40,22 @@
   line-height: 20px;
 }
 .instruction__icon-message {
-  background-image: url('../../images/Icon-instructions-forward.svg');
+  background-image: url('../../images/icon-message-violet.svg');
   background-repeat: no-repeat;
-  width: 10px;
-  height: 15px;
-  margin: 2px 6px 0 0;
+  background-size: cover;
+  background-position: center;
+  width: 11px;
+  height: 11px;
+  margin: 4px 6px 0 0;
 }
 .instruction__icon-like {
-  background-image: url('../../images/Icon-instructions-forward.svg');
+  background-image: url('../../images/icon-heart-violet-instr.svg');
   background-repeat: no-repeat;
-  width: 10px;
-  height: 15px;
-  margin: 2px 6px 0 0;
+  background-size: cover;
+  background-position: center;
+  width: 11px;
+  height: 10px;
+  margin: 5px 3px 0 0;
 }
 .instruction__icon-forward {
   background-image: url('../../images/Icon-instructions-forward.svg');
@@ -63,6 +67,13 @@
 .instruction__image {
   margin: 0;
   border-radius: 20px;
+}
+.instruction__image-2 {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.instruction__image-girl-2{
+  margin-top: 40px;
 }
 .instruction__image:last-child {
   background-position-x: left;
