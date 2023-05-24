@@ -241,6 +241,7 @@ buttonOrderClinicElements.forEach((el) => {
   el.addEventListener('click', () => {
     console.log(el);
     extraHelpBlock.classList.remove('symptoms_visible');
+    appointmentSection.scrollIntoView();
 
     // appointmentSection.classList.remove('appointment_visible');
     popupChooseDate.classList.add('popup_opened');
